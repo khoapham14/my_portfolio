@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.body{
+  font-family: 'Rubik';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#intro{
+  background-image: url("Images/iceberg-illustration-concept/4326938.jpg");
+  height: 100vh;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link{
+  color: white !important;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar .navbar-toggler {
+  border-color: transparent;
+} 
+
+
+#welcome {
+  padding-top: 30%;
+}
+#header{
   color: white;
+  font-size: 3em;
+  font-weight: 300;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#description {
+  color: white;
+  font-size: 1.3em;
+  font-weight: 300;
 }
