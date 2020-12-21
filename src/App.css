@@ -1,15 +1,24 @@
+/* Global Styles */
 .body{
   font-family: 'Rubik';
+  font-size: 16px;
 }
 
+
+/* Intro & Navbar */
 #intro{
-  background-image: url("Images/iceberg-illustration-concept/4326938.jpg");
+  background-image: url("Assets/iceberg-illustration-concept/4326938.jpg");
   height: 100vh;
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
 }
 
 .nav-link{
@@ -27,7 +36,6 @@
   border-color: transparent;
 } 
 
-
 #welcome {
   padding-top: 30%;
 }
@@ -42,3 +50,40 @@
   font-size: 1.3em;
   font-weight: 300;
 }
+
+#arrow {
+  align-self: center;
+}
+
+/* About Me */
+#about-section{
+  margin-top: 1%;
+  text-align: center;
+}
+
+#about-header{
+  color: #22D1EE;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+#about-sub-header{
+  color: #22D1EE;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 0;
+}
+
+#skills{
+  padding-top: 5vh;
+}
+
+#skill_desc{
+  color: #4F4F4F;
+  font-size: 1.3em;
+  margin-bottom: 10%;
+  text-align: left;
+  font-weight: 300;
+}
+
+
