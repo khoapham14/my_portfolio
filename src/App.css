@@ -1,4 +1,8 @@
 /* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 .body{
   font-family: 'Rubik';
   font-size: 16px;
@@ -37,37 +41,54 @@
 } 
 
 #welcome {
-  padding-top: 30%;
+  padding-top: 20%;
+  text-align: center;
 }
+
+#divider{
+  border-color: white;
+}
+
 #header{
   color: white;
   font-size: 3em;
-  font-weight: 300;
+  font-weight: 500;
+  text-shadow: 2px 2px 1px #4F4F4F;
 }
 
 #description {
   color: white;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: 300;
+  text-shadow: 2px 2px 1px #4F4F4F;
+}
+
+#cta_button{
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 1em;
 }
 
 #arrow {
-  align-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
 }
 
-/* About Me */
-#about-section{
+/* Skills Section */
+#about_section{
   margin-top: 1%;
   text-align: center;
 }
 
-#about-header{
+#about_header{
   color: #22D1EE;
   font-size: 3em;
   font-weight: 700;
 }
 
-#about-sub-header{
+#about_sub_header{
   color: #22D1EE;
   font-size: 2em;
   font-weight: 400;
@@ -76,6 +97,13 @@
 
 #skills{
   padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+#skill_name {
+  color: #4f4f4f;
+  font-size: 1.7em;
+  font-weight: 500;
 }
 
 #skill_desc{
@@ -86,4 +114,31 @@
   font-weight: 300;
 }
 
+
+/* Contact Section */
+#contact_section{
+  background-image: url("Assets/empty-underwater-blue-shine-abstract-background-light-bright-clean-ocean-sea/42065.jpg");
+  height: 100vh;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 5vh;
+}
+
+#contact_header{
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#contact_sub_header{
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+}
 
