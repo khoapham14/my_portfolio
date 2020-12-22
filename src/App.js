@@ -1,5 +1,5 @@
 // Style sheets and react-bootstrap components
-import { Navbar, Nav, Container, Row, Col, Button } from 'react-bootstrap';
+import { Navbar, Nav, Container, Row, Col, Button, Form } from 'react-bootstrap';
 import './App.css';
 
 // Images, Icons and Logos
@@ -11,15 +11,20 @@ import Skill_C from './Assets/Icons/Skill_C.svg';
 import Skill_BackEnd from './Assets/Icons/Skill_BackEnd.svg';
 import Skill_Comms from './Assets/Icons/Skill_Comms.svg';
 import White_Arrow from './Assets/Icons/arrow-204-512.png';
+import Email from './Assets/Icons/email-256.png';
+import Facebook from './Assets/Icons/facebook-4-256.png';
+import Github from './Assets/Icons/github-9-256.png';
+import LinkedIn from './Assets/Icons/linkedin-3-256.png';
 
-
+// Other packages
+import { Link } from 'react-scroll';
 
 function App() {
   return (
     <div>
       <div id="intro">
         {/* Navbar */}
-        <Container>
+        <Container className="navBar">
           <Navbar expand="lg">
             <Navbar.Brand>
               <img
@@ -30,12 +35,12 @@ function App() {
                 className="d-inline-block align-top"
               />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" className="justify-content-end"/>
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
               <Nav className="mr-auto justify-content-end">
-                <Nav.Link href="#home">My Skills</Nav.Link>
-                <Nav.Link href="#link">My Contact Details</Nav.Link>
-                <Nav.Link href="#link">My Projects</Nav.Link>
+                <Nav.Link> <Link to="skills_section" spy={true} smooth={true}> My Skills </Link></Nav.Link>
+                <Nav.Link> <Link to="contact_section" spy={true} smooth={true}> Contact Me </Link></Nav.Link>
+                <Nav.Link> <Link to="projects_section" spy={true} smooth={true}> My Projects </Link></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -49,12 +54,12 @@ function App() {
               <div id="welcome">
                 <p id="header"> Welcome to my website! </p>
                 <hr id="divider" />
-                <p id="description"> My name is Khoa (or Cody). Grew up 
-                          in Vietnam but moved to Auckland in 2014. 
-                          Recently finished my Bachelor's Degree  
-                          in Computer & Information Sciences at AUT. 
-                          Currently looking for work & internship opportunities. </p>
-                <Button variant="outline-light" id="cta_button"> Let's Talk! </Button>
+                <p id="description"> My name is Khoa (or Cody). I grew up
+                in Vietnam and moved to Auckland in 2014.
+                I have recently finished my Bachelor's Degree
+                in Computer & Information Sciences at AUT.
+                Currently looking for <br /> work & internship opportunities. </p>
+                <Button variant="outline-light" id="cta_button">  <Link to="contact_section" spy={true} smooth={true}> Let's Talk! </Link> </Button>
               </div>
             </Col>
             <Col md={3}></Col>
@@ -70,9 +75,9 @@ function App() {
       </div>
 
       {/* Skills Section */}
-      <div id="about_section">
-        <p id="about_header"> My Skills </p>
-        <p id="about_sub_header"> and how I got them </p>
+      <div id="skills_section">
+        <p id="skills_header"> My Skills </p>
+        <p id="skills_sub_header"> and how I got them </p>
         <Container id="skills">
           <Row>
             <Col xs={4} md={4}>
@@ -111,7 +116,7 @@ function App() {
                 className="d-inline-block align-top"
               />
               <p id="skill_name"> PC Building </p>
-              <p id="skill_desc"> Stemmed from my interest in gaming, I learnt basic PC
+              <p id="skill_desc"> Stemmed from my interest in gaming, I learnt computer
                                   assembly from Youtube & ICE Courses at Techtorium. </p>
 
 
@@ -160,13 +165,71 @@ function App() {
       <div id="contact_section">
         <p id="contact_header"> My Contact Details </p>
         <Container>
-          <Row>    
-            <Col md={6}>
-            <p id="contact_sub_header"> Send me a message here</p>
-            {/* TODO: Messaging Form */}
+          <Row>
+            <Col md={6} id="media_links">
+              <p id="contact_sub_header"> Find me on these platforms: </p>
+              <Row>
+                <Col md={2}></Col>
+                <Col md={2}>
+                  <img
+                    src={Email}
+                    height="40em"
+                    width="auto"
+                    alt="Mail Logo"
+                    className="contact_icons"
+                  />
+
+                  <img
+                    src={Facebook}
+                    height="40em"
+                    width="auto"
+                    alt="Mail Logo"
+                    className="contact_icons"
+                  />
+
+                  <img
+                    src={Github}
+                    height="40em"
+                    width="auto"
+                    alt="Mail Logo"
+                    className="contact_icons"
+                  />
+
+                  <img
+                    src={LinkedIn}
+                    height="40em"
+                    width="auto"
+                    alt="Mail Logo"
+                    className="contact_icons"
+                  />
+                </Col>
+                <Col md={6}>
+                  <p id="contact_text"> cody.pham14@gmail.com </p>
+                  <p id="contact_text"> Pham Anh Khoa </p>
+                  <p id="contact_text"> asianlanlord </p>
+                  <p id="contact_text"> Khoa Pham </p>
+                </Col>
+                <Col md={2}></Col>
+              </Row>
             </Col>
             <Col md={6}>
-            <p id="contact_sub_header"> Or contact me via these platforms</p>
+            <p id="contact_sub_header"> Alternatively, send me a message here: </p>
+              <Col md={10} id="contact_form">
+              <Form>
+                <Form.Group controlId="formName">
+                  <Form.Label> Name: </Form.Label>
+                  <Form.Control type="name" placeholder="Enter your name"/>
+                </Form.Group>
+                <Form.Group controlId="formEmail">
+                  <Form.Label> Email: </Form.Label>
+                  <Form.Control type="email" placeholder="Enter your email"/>
+                </Form.Group>
+                <Form.Group controlId="formMessage">
+                  <Form.Label> Message: </Form.Label>
+                  <Form.Control type="message" placeholder="Enter your message"/>
+                </Form.Group>
+              </Form>
+              </Col>             
             </Col>
           </Row>
         </Container>

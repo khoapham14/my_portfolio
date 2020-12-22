@@ -9,6 +9,7 @@ html {
 }
 
 
+
 /* Intro & Navbar */
 #intro{
   background-image: url("Assets/iceberg-illustration-concept/4326938.jpg");
@@ -20,17 +21,25 @@ html {
   margin-top: 0;
 }
 
+
 .navbar-brand {
   display: flex;
   align-items: center;
 }
 
-.nav-link{
+.navbar .navbar-collapse{
+  position: absolute;
+  right: 0px;
+  
+}
+
+.navbar .nav-link{
   color: white !important;
   font-size: 1.5em;
   font-weight: 300;
   text-decoration: none;
 }
+
 
 .navbar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -41,7 +50,7 @@ html {
 } 
 
 #welcome {
-  padding-top: 20%;
+  padding-top: 17%;
   text-align: center;
 }
 
@@ -77,18 +86,18 @@ html {
 }
 
 /* Skills Section */
-#about_section{
+#skills_section{
   margin-top: 1%;
   text-align: center;
 }
 
-#about_header{
+#skills_header{
   color: #22D1EE;
   font-size: 3em;
   font-weight: 700;
 }
 
-#about_sub_header{
+#skills_sub_header{
   color: #22D1EE;
   font-size: 2em;
   font-weight: 400;
@@ -137,8 +146,37 @@ html {
 
 #contact_sub_header{
   color: #FFFFFF;
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 400;
   text-align: center;
+  margin-bottom: 2em;
 }
 
+.contact_icons{
+  margin-bottom: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact_text{
+  color: #FFFFFF;
+  font-size: 1.3em;
+  font-weight: 300;
+  margin-bottom: 2.8em;
+}
+
+#media_links{
+  border-right: 2px solid #FFFFFF;
+}
+
+#contact_form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-label{
+  color: #FFFFFF;
+  font-size: 1.5em;
+}
