@@ -1,5 +1,5 @@
 // Style sheets and react-bootstrap components
-import { Navbar, Nav, Container, Row, Col, Button, Form } from 'react-bootstrap';
+import { Navbar, Nav, Container, Row, Col, Button, Form, Card } from 'react-bootstrap';
 import './App.css';
 
 // Images, Icons and Logos
@@ -35,7 +35,7 @@ function App() {
                 className="d-inline-block align-top"
               />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" className="justify-content-end"/>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" className="justify-content-end" />
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
               <Nav className="mr-auto justify-content-end">
                 <Nav.Link> <Link to="skills_section" spy={true} smooth={true}> My Skills </Link></Nav.Link>
@@ -213,23 +213,24 @@ function App() {
               </Row>
             </Col>
             <Col md={6}>
-            <p id="contact_sub_header"> Alternatively, send me a message here: </p>
+              <p id="contact_sub_header"> Or... send me a message here: </p>
               <Col md={10} id="contact_form">
-              <Form>
-                <Form.Group controlId="formName">
-                  <Form.Label> Name: </Form.Label>
-                  <Form.Control type="name" placeholder="Enter your name"/>
-                </Form.Group>
-                <Form.Group controlId="formEmail">
-                  <Form.Label> Email: </Form.Label>
-                  <Form.Control type="email" placeholder="Enter your email"/>
-                </Form.Group>
-                <Form.Group controlId="formMessage">
-                  <Form.Label> Message: </Form.Label>
-                  <Form.Control type="message" placeholder="Enter your message"/>
-                </Form.Group>
-              </Form>
-              </Col>             
+                <Form>
+                  <Form.Group controlId="formName">
+                    <Form.Label> Name: </Form.Label>
+                    <Form.Control type="name" placeholder="Enter your name" />
+                  </Form.Group>
+                  <Form.Group controlId="formEmail">
+                    <Form.Label> Email: </Form.Label>
+                    <Form.Control type="email" placeholder="Enter your email" />
+                  </Form.Group>
+                  <Form.Group controlId="formMessage">
+                    <Form.Label> Message: </Form.Label>
+                    <Form.Control as="textarea" type="message" rows={5} placeholder="Enter your message" />
+                  </Form.Group>
+                  <Button variant="outline-light"> Submit </Button>
+                </Form>
+              </Col>
             </Col>
           </Row>
         </Container>
@@ -237,13 +238,75 @@ function App() {
 
       {/* Projects Section */}
       <div id="projects_section">
+        <p id="projects_header"> My Projects </p>
+        <Container>
+          <Row>
+            <Col md={6}>
+              <Card style={{ width: '65%' }}>
+                <Card.Img variant="top" src="holder.js/100px180"  width="350px" height="auto" />
+                <Card.Body>
+                  <Card.Title> We Are Us Website </Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted"> Technologies Used: ReactJS, React Bootstrap, NodeJS, AWS, Strapi CMS, Google Maps & Geocoding, and many more. </Card.Subtitle>
+                  <Card.Text> We Are Us is a platform similar to Airbnb but
+                    dedicated to health, wellness & self-improvement businesses.
+                  </Card.Text>
+                  <Button variant="primary"> See Project </Button>
+                  <Button variant="success"> Github </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6}>
+            <Card style={{ width: '65%' }}>
+                <Card.Img variant="top" src="holder.js/100px180"  width="350px" height="auto" />
+                <Card.Body>
+                  <Card.Title> SimpliCT </Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted"> Technologies Used:  </Card.Subtitle>
+                  <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
+                  </Card.Text>
+                  <Button variant="primary"> See Project </Button>
+                  <Button variant="success"> Github </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+
+          </Row>
+
+          <Row>
+            <Col md={6}>
+              <Card style={{ width: '65%' }}>
+                <Card.Img variant="top" src="holder.js/100px180"  width="350px" height="auto" />
+                <Card.Body>
+                  <Card.Title> Dad's Home Foundation </Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted"> Technologies Used: ReactJS, React Bootstrap, NodeJS, AWS, Strapi CMS, and many more. </Card.Subtitle>
+                  <Card.Text> An MVP for a non-profit fundraising organisation. 
+                  </Card.Text>
+                  <Button variant="primary"> See Project </Button>
+                  <Button variant="success"> Github </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6}>
+            <Card style={{ width: '65%' }}>
+                <Card.Img variant="top" src="holder.js/100px180"  width="350px" height="auto" />
+                <Card.Body>
+                  <Card.Title> SEER Website </Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted"> Technologies Used: ReactJS, React Bootstrap, Heroku. </Card.Subtitle>
+                  <Card.Text> A third year project for a repository strictly for Software Engineering related studies/researches/articles. Based largely on ScienceDirect.
+                  </Card.Text>
+                  <Button variant="primary"> See Project </Button>
+                  <Button variant="success"> Github </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
 
       </div>
 
 
       {/* Footer Section */}
       <div id="footer">
-
+        
       </div>
     </div>
 

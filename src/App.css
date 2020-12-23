@@ -178,5 +178,27 @@ html {
 
 .form-label{
   color: #FFFFFF;
-  font-size: 1.5em;
+  font-size: 1.3em;
+}
+
+
+/* Projects Section */
+#projects_section{
+  padding-top: 5vh;
+}
+
+#projects_header{
+  color: #22D1EE;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.card{
+  display:block;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 5%;
 }
