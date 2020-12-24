@@ -60,14 +60,14 @@ html {
 
 #header{
   color: white;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 500;
   text-shadow: 2px 2px 1px #4F4F4F;
 }
 
 #description {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 300;
   text-shadow: 2px 2px 1px #4F4F4F;
 }
@@ -196,9 +196,46 @@ html {
   padding-bottom: 3%;
 }
 
+#project_button{
+  margin-right: 1%;
+}
+
 .card{
   display:block;
   margin-left:auto;
   margin-right: auto;
   margin-bottom: 5%;
+}
+
+/* Footer Section */
+#footer {
+  background-color: #0E153A;
+  height: 25vh;
+  text-align: center;
+}
+
+#footer_logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+
+#footer_header{
+  margin-top: 3%;
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+#footer_desc{
+  color: #FFFFFF;
+  font-size: 1em;
+}
+
+
+@media only screen and (max-width: 1000px){
+  #project_button {
+    margin-bottom: 1%;
+  }
 }

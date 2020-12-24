@@ -49,8 +49,8 @@ function App() {
         {/* Header Section */}
         <Container>
           <Row>
-            <Col md={3}></Col>
-            <Col md={6}>
+            <Col md={2}></Col>
+            <Col md={8}>
               <div id="welcome">
                 <p id="header"> Welcome to my website! </p>
                 <hr id="divider" />
@@ -58,16 +58,16 @@ function App() {
                 in Vietnam and moved to Auckland in 2014.
                 I have recently finished my Bachelor's Degree
                 in Computer & Information Sciences at AUT.
-                Currently looking for <br /> work & internship opportunities. </p>
+                Currently looking for work & internship opportunities. </p>
                 <Button variant="outline-light" id="cta_button">  <Link to="contact_section" spy={true} smooth={true}> Let's Talk! </Link> </Button>
               </div>
             </Col>
-            <Col md={3}></Col>
+            <Col md={2}></Col>
           </Row>
         </Container>
         <img
           src={White_Arrow}
-          height="50vw"
+          height="5%"
           width="auto"
           alt="white arrow"
           id="arrow"
@@ -213,7 +213,7 @@ function App() {
               </Row>
             </Col>
             <Col md={6}>
-              <p id="contact_sub_header"> Or... send me a message here: </p>
+              <p id="contact_sub_header"> Send me a message here: </p>
               <Col md={10} id="contact_form">
                 <Form>
                   <Form.Group controlId="formName">
@@ -243,27 +243,27 @@ function App() {
           <Row>
             <Col md={6}>
               <Card style={{ width: '65%' }}>
-                <Card.Img variant="top" src="holder.js/100px180"  width="350px" height="auto" />
+                <Card.Img variant="top" src="holder.js/100px180" width="350px" height="auto" />
                 <Card.Body>
                   <Card.Title> We Are Us Website </Card.Title>
                   <Card.Subtitle className="mb-2 text-muted"> Technologies Used: ReactJS, React Bootstrap, NodeJS, AWS, Strapi CMS, Google Maps & Geocoding, and many more. </Card.Subtitle>
                   <Card.Text> We Are Us is a platform similar to Airbnb but
-                    dedicated to health, wellness & self-improvement businesses.
+                  dedicated to health, wellness & self-improvement businesses.
                   </Card.Text>
-                  <Button variant="primary"> See Project </Button>
+                  <Button variant="primary" id="project_button"> See Project </Button>
                   <Button variant="success"> Github </Button>
                 </Card.Body>
               </Card>
             </Col>
             <Col md={6}>
-            <Card style={{ width: '65%' }}>
-                <Card.Img variant="top" src="holder.js/100px180"  width="350px" height="auto" />
+              <Card style={{ width: '65%' }}>
+                <Card.Img variant="top" src="holder.js/100px180" width="350px" height="auto" />
                 <Card.Body>
                   <Card.Title> SimpliCT </Card.Title>
                   <Card.Subtitle className="mb-2 text-muted"> Technologies Used:  </Card.Subtitle>
                   <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
                   </Card.Text>
-                  <Button variant="primary"> See Project </Button>
+                  <Button variant="primary" id="project_button"> See Project </Button>
                   <Button variant="success"> Github </Button>
                 </Card.Body>
               </Card>
@@ -274,26 +274,26 @@ function App() {
           <Row>
             <Col md={6}>
               <Card style={{ width: '65%' }}>
-                <Card.Img variant="top" src="holder.js/100px180"  width="350px" height="auto" />
+                <Card.Img variant="top" src="holder.js/100px180" width="350px" height="auto" />
                 <Card.Body>
                   <Card.Title> Dad's Home Foundation </Card.Title>
                   <Card.Subtitle className="mb-2 text-muted"> Technologies Used: ReactJS, React Bootstrap, NodeJS, AWS, Strapi CMS, and many more. </Card.Subtitle>
-                  <Card.Text> An MVP for a non-profit fundraising organisation. 
+                  <Card.Text> An MVP for a non-profit fundraising organisation.
                   </Card.Text>
-                  <Button variant="primary"> See Project </Button>
+                  <Button variant="primary" id="project_button"> See Project </Button>
                   <Button variant="success"> Github </Button>
                 </Card.Body>
               </Card>
             </Col>
             <Col md={6}>
-            <Card style={{ width: '65%' }}>
-                <Card.Img variant="top" src="holder.js/100px180"  width="350px" height="auto" />
+              <Card style={{ width: '65%' }}>
+                <Card.Img variant="top" src="holder.js/100px180" width="350px" height="auto" />
                 <Card.Body>
                   <Card.Title> SEER Website </Card.Title>
                   <Card.Subtitle className="mb-2 text-muted"> Technologies Used: ReactJS, React Bootstrap, Heroku. </Card.Subtitle>
                   <Card.Text> A third year project for a repository strictly for Software Engineering related studies/researches/articles. Based largely on ScienceDirect.
                   </Card.Text>
-                  <Button variant="primary"> See Project </Button>
+                  <Button variant="primary" id="project_button"> See Project </Button>
                   <Button variant="success"> Github </Button>
                 </Card.Body>
               </Card>
@@ -306,7 +306,39 @@ function App() {
 
       {/* Footer Section */}
       <div id="footer">
-        
+
+        <Container>
+          <Row>
+            <img
+              src={Logo}
+              height="50px"
+              width="auto"
+              alt="Khoa's Logo"
+              className="d-inline-block align-top"
+              id="footer_logo"
+            />
+          </Row>
+          <Row>
+            <Col md={4}>
+              <p id="footer_header"> Credits </p>
+              <p><a id="footer_desc" href="http://www.freepik.com"> Iceberg Illustration by pikisuperstar</a></p>
+              <p><a id="footer_desc" href="http://www.freepik.com"> Underwater Illustration by macrovector</a></p>
+            </Col>
+
+            <Col md={4}>
+              <p id="footer_header"> For employers </p>
+              <p id="footer_desc">  My CV/Resume</p>
+              <p id="footer_desc"> My Working Visa</p>
+            </Col>
+
+            <Col md={4}>
+              <p id="footer_header">  And finally...</p>
+              <p id="footer_desc"> Thank you for visiting my website. Have a nice rest of your day!</p>
+            </Col>
+
+          </Row>
+
+        </Container>
       </div>
     </div>
 
