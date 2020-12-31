@@ -8,13 +8,16 @@ import Skill_FrontEnd from './Assets/Icons/Skill_FrontEnd.svg';
 import Skill_PC from './Assets/Icons/Skill_PC.svg';
 import Skill_Java from './Assets/Icons/Skill_Java.svg';
 import Skill_C from './Assets/Icons/Skill_C.svg';
-import Skill_BackEnd from './Assets/Icons/Skill_BackEnd.svg';
 import Skill_Comms from './Assets/Icons/Skill_Comms.svg';
 import White_Arrow from './Assets/Icons/arrow-204-512.png';
 import Email from './Assets/Icons/email-256.png';
 import Facebook from './Assets/Icons/facebook-4-256.png';
 import Github from './Assets/Icons/github-9-256.png';
 import LinkedIn from './Assets/Icons/linkedin-3-256.png';
+import WAU_Card from './Assets/Projects/We_Are_Us_Card.png';
+import Simp_Card from './Assets/Projects/SimpliCT.png';
+import DHF_Card from './Assets/Projects/DHF_Card.png';
+import SEER_Card from './Assets/Projects/SEER.png';
 
 // Other packages
 import { Link } from 'react-scroll';
@@ -52,13 +55,12 @@ function App() {
             <Col md={2}></Col>
             <Col md={8}>
               <div id="welcome">
-                <p id="header"> Welcome to my website! </p>
+                <p id="header"> Hi, I'm Khoa. </p>
                 <hr id="divider" />
-                <p id="description"> My name is Khoa (or Cody). I grew up
+                <p id="description"> I grew up
                 in Vietnam and moved to Auckland in 2014.
-                I have recently finished my Bachelor's Degree
-                in Computer & Information Sciences at AUT.
-                Currently looking for work & internship opportunities. </p>
+                I have recently finished my Bachelor's Degree &
+                now I'm looking for internship opportunities. </p>
                 <Button variant="outline-light" id="cta_button">  <Link to="contact_section" spy={true} smooth={true}> Let's Talk! </Link> </Button>
               </div>
             </Col>
@@ -88,23 +90,9 @@ function App() {
                 alt="Web Dev Front End"
                 className="d-inline-block align-top"
               />
-              <p id="skill_name"> Front-end Web Dev</p>
+              <p id="skill_name"> Web Dev</p>
               <p id="skill_desc"> Learnt HTML, Javascript, CSS during Year 12 & 13.
                                   Learnt Bootstrap and ReactJS for University Projects. </p>
-
-
-              <img
-                src={Skill_C}
-                height="200em"
-                width="auto"
-                alt="Khoa's Logo"
-                className="d-inline-block align-top"
-              />
-
-              <p id="skill_name"> C Programming </p>
-              <p id="skill_desc"> Learnt C during my first year at AUT. While I did not
-                                  get much practice, C was a great intro to programming.  </p>
-
             </Col>
             <Col xs={4} md={4}>
 
@@ -119,18 +107,6 @@ function App() {
               <p id="skill_desc"> Stemmed from my interest in gaming, I learnt computer
                                   assembly from Youtube & ICE Courses at Techtorium. </p>
 
-
-              <img
-                src={Skill_BackEnd}
-                height="200em"
-                width="auto"
-                alt="Khoa's Logo"
-                className="d-inline-block align-top"
-              />
-              <p id="skill_name"> Back-end Development </p>
-              <p id="skill_desc"> Learnt PHP, SQL during my second and third year at AUT.
-                                  I then learnt Firebase, AWS and Heroku from Udemy. </p>
-
             </Col>
             <Col xs={4} md={4}>
               <img
@@ -140,11 +116,28 @@ function App() {
                 alt="Khoa's Logo"
                 className="d-inline-block align-top"
               />
-              <p id="skill_name"> Java Programming </p>
+              <p id="skill_name"> Java</p>
               <p id="skill_desc"> Learnt and used Java for most of the papers at AUT.
                                   It introduced me to Object-Oriented Programming. </p>
+            </Col>
+          </Row>
 
+          <Row>
+            <Col md={2}></Col>
+            <Col md={4}>
+              <img
+                src={Skill_C}
+                height="200em"
+                width="auto"
+                alt="Khoa's Logo"
+                className="d-inline-block align-top"
+              />
 
+              <p id="skill_name"> C</p>
+              <p id="skill_desc"> Learnt C during my first year at AUT. While I did not
+                                  get much practice, C was a great intro to programming.  </p>
+            </Col>
+            <Col md={4}>
               <img
                 src={Skill_Comms}
                 height="200em"
@@ -152,10 +145,9 @@ function App() {
                 alt="Khoa's Logo"
                 className="d-inline-block align-top"
               />
-              <p id="skill_name"> Cooperation </p>
+              <p id="skill_name"> Teamwork </p>
               <p id="skill_desc"> Most projects at AUT were done in groups, allowing me
                                   to learn how to work with others. </p>
-
             </Col>
           </Row>
         </Container>
@@ -243,10 +235,10 @@ function App() {
           <Row>
             <Col md={6}>
               <Card style={{ width: '65%' }}>
-                <Card.Img variant="top" src="holder.js/100px180" width="350px" height="auto" />
+              <Card.Img variant="top" src={WAU_Card} width="500px" height="250px" />
                 <Card.Body>
                   <Card.Title> We Are Us Website </Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted"> Technologies Used: ReactJS, React Bootstrap, NodeJS, AWS, Strapi CMS, Google Maps & Geocoding, and many more. </Card.Subtitle>
+                  <Card.Subtitle className="mb-2 text-muted"> Technologies Used: ReactJS, Bootstrap, NodeJS, AWS, Strapi CMS, Google Maps & Geocoding, and many more. </Card.Subtitle>
                   <Card.Text> We Are Us is a platform similar to Airbnb but
                   dedicated to health, wellness & self-improvement businesses.
                   </Card.Text>
@@ -257,7 +249,7 @@ function App() {
             </Col>
             <Col md={6}>
               <Card style={{ width: '65%' }}>
-                <Card.Img variant="top" src="holder.js/100px180" width="350px" height="auto" />
+                <Card.Img variant="top" src={Simp_Card} width="500px" height="250px" />
                 <Card.Body>
                   <Card.Title> SimpliCT </Card.Title>
                   <Card.Subtitle className="mb-2 text-muted"> Technologies Used:  </Card.Subtitle>
@@ -274,7 +266,7 @@ function App() {
           <Row>
             <Col md={6}>
               <Card style={{ width: '65%' }}>
-                <Card.Img variant="top" src="holder.js/100px180" width="350px" height="auto" />
+                <Card.Img variant="top" src={DHF_Card} width="500px" height="250px" />
                 <Card.Body>
                   <Card.Title> Dad's Home Foundation </Card.Title>
                   <Card.Subtitle className="mb-2 text-muted"> Technologies Used: ReactJS, React Bootstrap, NodeJS, AWS, Strapi CMS, and many more. </Card.Subtitle>
@@ -287,7 +279,7 @@ function App() {
             </Col>
             <Col md={6}>
               <Card style={{ width: '65%' }}>
-                <Card.Img variant="top" src="holder.js/100px180" width="350px" height="auto" />
+              <Card.Img variant="top" src={SEER_Card} width="500px" height="250px" />
                 <Card.Body>
                   <Card.Title> SEER Website </Card.Title>
                   <Card.Subtitle className="mb-2 text-muted"> Technologies Used: ReactJS, React Bootstrap, Heroku. </Card.Subtitle>
@@ -335,7 +327,6 @@ function App() {
               <p id="footer_header">  And finally...</p>
               <p id="footer_desc"> Thank you for visiting my website. Have a nice rest of your day!</p>
             </Col>
-
           </Row>
 
         </Container>

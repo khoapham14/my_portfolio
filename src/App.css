@@ -21,23 +21,26 @@ html {
   margin-top: 0;
 }
 
-
 .navbar-brand {
   display: flex;
   align-items: center;
 }
 
-.navbar .navbar-collapse{
-  position: absolute;
-  right: 0px;
-  
-}
-
 .navbar .nav-link{
   color: white !important;
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+  linear-gradient(#FFFFFF, #FFFFFF);
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s linear;
+}
+
+.navbar .nav-link:hover{
+  background-size: 0 2px, 100% 2px;
 }
 
 
@@ -82,7 +85,7 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  margin-top: 12%;
 }
 
 /* Skills Section */
@@ -237,5 +240,10 @@ html {
 @media only screen and (max-width: 1000px){
   #project_button {
     margin-bottom: 1%;
+  }
+
+  .navbar .navbar-collapse{
+    position: flex;
+    text-align: center;
   }
 }
