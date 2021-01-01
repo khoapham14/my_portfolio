@@ -83,9 +83,9 @@ class App extends React.Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" className="justify-content-end" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                   <Nav className="mr-auto justify-content-end">
-                    <p id="nav-link"> <Link to="skills_section" spy={true} smooth={true}> My Skills </Link></p>
-                    <p id="nav-link"> <Link to="contact_section" spy={true} smooth={true}> Contact Me </Link></p>
-                    <p id="nav-link"> <Link to="projects_section" spy={true} smooth={true}> My Projects </Link></p>
+                    <Nav.Link ><Link to="skills_section" spy={true} smooth={true} id="nav-link"> My Skills </Link></Nav.Link>
+                    <Nav.Link > <Link to="contact_section" spy={true} smooth={true} id="nav-link"> Contact Me </Link></Nav.Link>
+                    <Nav.Link > <Link to="projects_section" spy={true} smooth={true} id="nav-link"> My Projects </Link></Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
               </Navbar>
@@ -124,7 +124,7 @@ class App extends React.Component {
             <p id="skills_sub_header"> and how I got them </p>
             <Container id="skills">
               <Row>
-                <Col xs={4} md={4}>
+                <Col xs={6} md={6}>
                   <img
                     src={Skill_FrontEnd}
                     height="auto"
@@ -136,7 +136,7 @@ class App extends React.Component {
                   <p id="skill_desc"> Learnt HTML, Javascript, CSS during Year 12 & 13.
                                       Learnt Bootstrap and ReactJS for University Projects. </p>
                 </Col>
-                <Col xs={4} md={4}>
+                <Col xs={6} md={6}>
 
                   <img
                     src={Skill_PC}
@@ -150,7 +150,9 @@ class App extends React.Component {
                                       assembly from Youtube & ICE Courses at Techtorium. </p>
 
                 </Col>
-                <Col xs={4} md={4}>
+              </Row>
+              <Row>
+                <Col xs={6} md={6}>
                   <img
                     src={Skill_Java}
                     height="auto"
@@ -162,11 +164,11 @@ class App extends React.Component {
                   <p id="skill_desc"> Learnt and used Java for most of the papers at AUT.
                                       It introduced me to Object-Oriented Programming. </p>
                 </Col>
-              </Row>
 
-              <Row>
 
-                <Col xs={4} md={4}>
+
+
+                <Col xs={6} md={6}>
                   <img
                     src={Skill_C}
                     height="auto"
@@ -180,7 +182,10 @@ class App extends React.Component {
                                       get much practice, C was a great intro to programming.  </p>
                 </Col>
 
-                <Col xs={4} md={4}>
+              </Row>
+              <Row>
+
+                <Col xs={6} md={6}>
                   <img
                     src={Skill_BackEnd}
                     height="auto"
@@ -193,7 +198,7 @@ class App extends React.Component {
                   <p id="skill_desc"> I learnt a bit of PHP and SQL at AUT.
                     I then learnt Firebase and Node.js on Udemy.  </p>
                 </Col>
-                <Col xs={4} md={4}>
+                <Col xs={6} md={6}>
                   <img
                     src={Skill_Comms}
                     height="auto"
@@ -390,9 +395,9 @@ class App extends React.Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" className="justify-content-end" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                   <Nav className="mr-auto justify-content-end">
-                    <p id="nav-link"> <Link to="skills_section" spy={true} smooth={true} id="nav-link"> My Skills </Link></p>
-                    <p id="nav-link"> <Link to="contact_section" spy={true} smooth={true}> Contact Me </Link></p>
-                    <p id="nav-link"> <Link to="projects_section" spy={true} smooth={true}> My Projects </Link></p>
+                    <Nav.Link ><Link to="skills_section" spy={true} smooth={true} id="nav-link"> My Skills </Link></Nav.Link>
+                    <Nav.Link > <Link to="contact_section" spy={true} smooth={true} id="nav-link"> Contact Me </Link></Nav.Link>
+                    <Nav.Link > <Link to="projects_section" spy={true} smooth={true} id="nav-link"> My Projects </Link></Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
               </Navbar>
@@ -695,9 +700,9 @@ class App extends React.Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" className="justify-content-end" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                   <Nav className="mr-auto justify-content-end">
-                    <p id="nav-link"> <Link to="skills_section" spy={true} smooth={true}> My Skills </Link></p>
-                    <p id="nav-link"> <Link to="contact_section" spy={true} smooth={true}> Contact Me </Link></p>
-                    <p id="nav-link"> <Link to="projects_section" spy={true} smooth={true}> My Projects </Link></p>
+                    <Nav.Link ><Link to="skills_section" spy={true} smooth={true} id="nav-link"> My Skills </Link></Nav.Link>
+                    <Nav.Link > <Link to="contact_section" spy={true} smooth={true} id="nav-link"> Contact Me </Link></Nav.Link>
+                    <Nav.Link > <Link to="projects_section" spy={true} smooth={true} id="nav-link"> My Projects </Link></Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
               </Navbar>

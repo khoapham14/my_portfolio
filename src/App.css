@@ -215,7 +215,7 @@ body{
 /* Footer Section */
 #footer {
   background-color: #0E153A;
-  height: 300px;
+  height: 25vh;
   text-align: center;
 }
 
@@ -251,7 +251,7 @@ body{
 
   #contact_section{
     background-image: url("Assets/empty-underwater-blue-shine-abstract-background-light-bright-clean-ocean-sea/42065.jpg");
-    height: 150vh;
+    height: 120vh;
     width: auto;
     min-height: 720px;
     background-repeat: no-repeat;
@@ -264,16 +264,22 @@ body{
     border-right: 0px;
     padding-bottom: 5%;
   }
+
+  #footer {
+    background-color: #0E153A;
+    height: 50vh;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   body{
-    font-size: 10px;
+    font-size: 12px;
   }
 
   #footer {
     background-color: #0E153A;
-    height: 100vh;
+    height: 500px;
     text-align: center;
   }
   
