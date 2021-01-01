@@ -3,8 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.body{
-  font-family: 'Rubik';
+body{
   font-size: 16px;
 }
 
@@ -14,11 +13,15 @@ html {
 #intro{
   background-image: url("Assets/iceberg-illustration-concept/4326938.jpg");
   height: 100vh;
+  min-height: 720px;
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: 0;
+  margin-left: auto;
+  display:block;
+  margin-right: auto;
 }
 
 .navbar-brand {
@@ -26,7 +29,7 @@ html {
   align-items: center;
 }
 
-.navbar .nav-link{
+#nav-link{
   color: white !important;
   font-size: 1.5em;
   font-weight: 400;
@@ -37,9 +40,10 @@ html {
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 0.5s linear;
+  margin-right: 1em;
 }
 
-.navbar .nav-link:hover{
+#nav-link:hover{
   background-size: 0 2px, 100% 2px;
 }
 
@@ -65,14 +69,14 @@ html {
   color: white;
   font-size: 4em;
   font-weight: 500;
-  text-shadow: 2px 2px 1px #4F4F4F;
+  text-shadow: 1px 1px 1px #4F4F4F;
 }
 
 #description {
   color: white;
   font-size: 1.7em;
   font-weight: 300;
-  text-shadow: 2px 2px 1px #4F4F4F;
+  text-shadow: 1px 1px 1px #4F4F4F;
 }
 
 #cta_button{
@@ -132,6 +136,7 @@ html {
   background-image: url("Assets/empty-underwater-blue-shine-abstract-background-light-bright-clean-ocean-sea/42065.jpg");
   height: 100vh;
   width: auto;
+  min-height: 720px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -150,9 +155,10 @@ html {
 #contact_sub_header{
   color: #FFFFFF;
   font-size: 1.8em;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 2em;
+  margin-top: 1em;
 }
 
 .contact_icons{
@@ -199,10 +205,6 @@ html {
   padding-bottom: 3%;
 }
 
-#project_button{
-  margin-right: 1%;
-}
-
 .card{
   display:block;
   margin-left:auto;
@@ -213,7 +215,7 @@ html {
 /* Footer Section */
 #footer {
   background-color: #0E153A;
-  height: 25vh;
+  height: 300px;
   text-align: center;
 }
 
@@ -238,12 +240,41 @@ html {
 
 
 @media only screen and (max-width: 1000px){
-  #project_button {
-    margin-bottom: 1%;
+  body{
+    font-size: 14px;
   }
 
   .navbar .navbar-collapse{
     position: flex;
     text-align: center;
   }
+
+  #contact_section{
+    background-image: url("Assets/empty-underwater-blue-shine-abstract-background-light-bright-clean-ocean-sea/42065.jpg");
+    height: 150vh;
+    width: auto;
+    min-height: 720px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 5vh;
+  }
+
+  #media_links{
+    border-right: 0px;
+    padding-bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body{
+    font-size: 10px;
+  }
+
+  #footer {
+    background-color: #0E153A;
+    height: 100vh;
+    text-align: center;
+  }
+  
 }
