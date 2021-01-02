@@ -3,6 +3,8 @@ import { Navbar, Nav, Container, Row, Col, Button, Form, Card } from 'react-boot
 import './App.css';
 import { Link } from 'react-scroll';
 import React from "react";
+import { init } from "emailjs-com";
+import emailjs from "emailjs-com";
 
 // Images, Icons and Logos
 import Logo from './Assets/Icons/Logo_White.svg';
@@ -23,17 +25,22 @@ import DHF_Card from './Assets/Projects/DHF_Card.png';
 import SEER_Card from './Assets/Projects/SEER.png';
 
 
-
-
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
       scrolled: false,
       width: window.innerWidth,
+      name: '',
+      email: '',
+      message: '',
     };
 
     this.handleScroll = this.handleScroll.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.onNameChange = this.onNameChange.bind(this);
+    this.onEmailChange = this.onEmailChange.bind(this);
+    this.onMessageChange = this.onMessageChange.bind(this);
   }
 
   componentDidMount() {
@@ -55,6 +62,39 @@ class App extends React.Component {
     }
   }
 
+  onNameChange(event) {
+    this.setState({ name: event.target.value });
+  }
+
+  onEmailChange(event) {
+    this.setState({ email: event.target.value });
+  }
+
+  onMessageChange(event) {
+    this.setState({ message: event.target.value });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+
+    init("user_ZuCRyzWfalPE8iWX4tLWc");
+    var emailParams = {
+      from_name: this.state.name,
+      to_name: "Khoa Pham",
+      from_email: this.state.email,
+      message: this.state.message,
+    };
+
+    emailjs.send('service_ox9rv0q', 'template_dqz39gi', emailParams)
+      .then(function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert("Your message has been sent!");
+      }, function (error) {
+        console.log('FAILED...', error);
+        alert("An error occured! Please try again later.");
+      });
+  }
+
   handleWindowSizeChange = () => {
     this.setState({ width: window.innerWidth });
   };
@@ -63,9 +103,9 @@ class App extends React.Component {
     const { width } = this.state;
     const isMobile = width <= 770;
     const isTablet = width > 770 && width <= 1000;
+
     if (isMobile) {
       return (
-
         <div>
           <div id="intro">
             {/* Navbar */}
@@ -165,9 +205,6 @@ class App extends React.Component {
                                       It introduced me to Object-Oriented Programming. </p>
                 </Col>
 
-
-
-
                 <Col xs={6} md={6}>
                   <img
                     src={Skill_C}
@@ -256,20 +293,20 @@ class App extends React.Component {
                   </Row>
                   <p id="contact_sub_header"> Send me a message here: </p>
                   <Col md={10} id="contact_form">
-                    <Form>
+                    <Form onSubmit={this.handleSubmit}>
                       <Form.Group controlId="formName">
                         <Form.Label> Name: </Form.Label>
-                        <Form.Control type="name" placeholder="Enter your name" />
+                        <Form.Control type="name" placeholder="Enter your name" onChange={this.onNameChange} />
                       </Form.Group>
                       <Form.Group controlId="formEmail">
                         <Form.Label> Email: </Form.Label>
-                        <Form.Control type="email" placeholder="Enter your email" />
+                        <Form.Control type="email" placeholder="Enter your email" onChange={this.onEmailChange} />
                       </Form.Group>
                       <Form.Group controlId="formMessage">
                         <Form.Label> Message: </Form.Label>
-                        <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" />
+                        <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" onChange={this.onMessageChange} />
                       </Form.Group>
-                      <Button variant="outline-light"> Submit </Button>
+                      <Button variant="outline-light" type="submit"> Submit </Button>
                     </Form>
                   </Col>
                 </Col>
@@ -303,9 +340,6 @@ class App extends React.Component {
                     <Button variant="primary" id="project_button"> See Project </Button>
                   </Card.Body>
                 </Card>
-
-
-
 
                 <Card style={{ width: '65%' }}>
                   <Card.Img variant="top" src={DHF_Card} width="100%" height="auto" />
@@ -563,20 +597,20 @@ class App extends React.Component {
                   </Row>
                   <p id="contact_sub_header"> Send me a message here: </p>
                   <Col md={10} id="contact_form">
-                    <Form>
+                    <Form onSubmit={this.handleSubmit}>
                       <Form.Group controlId="formName">
                         <Form.Label> Name: </Form.Label>
-                        <Form.Control type="name" placeholder="Enter your name" />
+                        <Form.Control type="name" placeholder="Enter your name" onChange={this.onNameChange} />
                       </Form.Group>
                       <Form.Group controlId="formEmail">
                         <Form.Label> Email: </Form.Label>
-                        <Form.Control type="email" placeholder="Enter your email" />
+                        <Form.Control type="email" placeholder="Enter your email" onChange={this.onEmailChange} />
                       </Form.Group>
                       <Form.Group controlId="formMessage">
                         <Form.Label> Message: </Form.Label>
-                        <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" />
+                        <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" onChange={this.onMessageChange} />
                       </Form.Group>
-                      <Button variant="outline-light"> Submit </Button>
+                      <Button variant="outline-light" type="submit"> Submit </Button>
                     </Form>
                   </Col>
                 </Col>
@@ -879,20 +913,20 @@ class App extends React.Component {
                 <Col md={6}>
                   <p id="contact_sub_header"> Send me a message here: </p>
                   <Col md={10} id="contact_form">
-                    <Form>
+                    <Form onSubmit={this.handleSubmit}>
                       <Form.Group controlId="formName">
                         <Form.Label> Name: </Form.Label>
-                        <Form.Control type="name" placeholder="Enter your name" />
+                        <Form.Control type="name" placeholder="Enter your name" onChange={this.onNameChange} />
                       </Form.Group>
                       <Form.Group controlId="formEmail">
                         <Form.Label> Email: </Form.Label>
-                        <Form.Control type="email" placeholder="Enter your email" />
+                        <Form.Control type="email" placeholder="Enter your email" onChange={this.onEmailChange} />
                       </Form.Group>
                       <Form.Group controlId="formMessage">
                         <Form.Label> Message: </Form.Label>
-                        <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" />
+                        <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" onChange={this.onMessageChange} />
                       </Form.Group>
-                      <Button variant="outline-light"> Submit </Button>
+                      <Button variant="outline-light" type="submit"> Submit </Button>
                     </Form>
                   </Col>
                 </Col>
@@ -962,7 +996,6 @@ class App extends React.Component {
             </Container>
 
           </div>
-
 
           {/* Footer Section */}
           <div id="footer">
