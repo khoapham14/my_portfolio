@@ -40,7 +40,7 @@ body{
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 0.5s linear;
-  margin-right: 1em;
+  margin-left: 1em;
 }
 
 #nav-link:hover{
@@ -94,18 +94,19 @@ body{
 
 /* Skills Section */
 #skills_section{
-  margin-top: 1%;
+  padding-top: 1%;
   text-align: center;
+  background-color: #fcfdfe;
 }
 
 #skills_header{
-  color: #22D1EE;
+  color: #4f4f4f;
   font-size: 3em;
   font-weight: 700;
 }
 
 #skills_sub_header{
-  color: #22D1EE;
+  color: #4f4f4f;
   font-size: 2em;
   font-weight: 400;
   line-height: 0;
@@ -194,10 +195,11 @@ body{
 /* Projects Section */
 #projects_section{
   padding-top: 5vh;
+  background-color: #fcfdfe;
 }
 
 #projects_header{
-  color: #22D1EE;
+  color: #4f4f4f;
   text-align: center;
   font-size: 3em;
   font-weight: 700;
@@ -215,7 +217,7 @@ body{
 /* Footer Section */
 #footer {
   background-color: #0E153A;
-  height: 25vh;
+  height: 15em;
   text-align: center;
 }
 
@@ -251,7 +253,7 @@ body{
 
   #contact_section{
     background-image: url("Assets/empty-underwater-blue-shine-abstract-background-light-bright-clean-ocean-sea/42065.jpg");
-    height: 120vh;
+    height: 150vh;
     width: auto;
     min-height: 720px;
     background-repeat: no-repeat;
@@ -267,20 +269,21 @@ body{
 
   #footer {
     background-color: #0E153A;
-    height: 50vh;
+    height: 10em;
+    min-height: 500px;
     text-align: center;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   body{
     font-size: 12px;
   }
 
   #footer {
     background-color: #0E153A;
-    height: 500px;
+    height: 50vw;
+    min-height: 500px;
     text-align: center;
   }
-  
 }

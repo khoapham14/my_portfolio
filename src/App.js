@@ -733,7 +733,7 @@ class App extends React.Component {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" className="justify-content-end" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-                  <Nav className="mr-auto justify-content-end">
+                  <Nav className="ml-auto justify-content-end">
                     <Nav.Link ><Link to="skills_section" spy={true} smooth={true} id="nav-link"> My Skills </Link></Nav.Link>
                     <Nav.Link > <Link to="contact_section" spy={true} smooth={true} id="nav-link"> Contact Me </Link></Nav.Link>
                     <Nav.Link > <Link to="projects_section" spy={true} smooth={true} id="nav-link"> My Projects </Link></Nav.Link>
