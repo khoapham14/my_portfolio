@@ -5,6 +5,7 @@ import { Link } from 'react-scroll';
 import React from "react";
 import { init } from "emailjs-com";
 import emailjs from "emailjs-com";
+import swal from 'sweetalert';
 
 // Images, Icons and Logos
 import Logo from './Assets/Icons/Logo_White.svg';
@@ -88,10 +89,10 @@ class App extends React.Component {
     emailjs.send('service_ox9rv0q', 'template_dqz39gi', emailParams)
       .then(function (response) {
         console.log('SUCCESS!', response.status, response.text);
-        alert("Your message has been sent!");
+        swal("Success", "Your message has been sent!", "succsess");
       }, function (error) {
         console.log('FAILED...', error);
-        alert("An error occured! Please try again later.");
+        swal("Uh oh!", "An error occured! Please try again later.",);
       });
   }
 
