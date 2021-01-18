@@ -79,6 +79,7 @@ class App extends React.Component {
     event.preventDefault();
 
     init("user_ZuCRyzWfalPE8iWX4tLWc");
+
     var emailParams = {
       from_name: this.state.name,
       to_name: "Khoa Pham",
@@ -346,8 +347,8 @@ class App extends React.Component {
                   <Card.Img variant="top" src={DHF_Card} width="100%" height="auto" />
                   <Card.Body>
                     <Card.Title> Dad's Home Foundation </Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">  ReactJS, React Bootstrap, NodeJS, AWS, Strapi CMS, and many more. </Card.Subtitle>
-                    <Card.Text> An MVP for a non-profit fundraising organisation.
+                    <Card.Subtitle className="mb-2 text-muted">  Vectr and InVision Studio </Card.Subtitle>
+                    <Card.Text> UI Design for a non-profit fundraising organisation.
                       </Card.Text>
                     <Button variant="primary" id="project_button"> See Project </Button>
                   </Card.Body>
@@ -394,7 +395,7 @@ class App extends React.Component {
                 <Col md={4}>
                   <p id="footer_header"> For employers </p>
                   <p><a id="footer_desc" href="https://docs.google.com/document/d/15-zNXyYNb5HW8aOzQFOw4jzlYUGow4FcUdzRTf-JeGg/edit?usp=sharing">  My CV/Resume</a></p>
-                  <p id="footer_desc"> My Working Visa</p>
+                  <p><a id="footer_desc" href="./Assets/Projects/MyVisa.pdf" target="_blank"> My Working Visa</a></p>
                 </Col>
 
                 <Col md={4}>
@@ -630,7 +631,7 @@ class App extends React.Component {
                     <Card.Title> We Are Us Website </Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">  ReactJS, Bootstrap, NodeJS, AWS, Strapi CMS, Google Maps & Geocoding, and many more. </Card.Subtitle>
                     <Card.Text> We Are Us is a platform similar to Airbnb but
-                    dedicated to health, wellness & self-improvement businesses.
+                    dedicated to promoting health, wellness & self-improvement businesses.
                     </Card.Text>
                     <Button variant="primary" id="project_button"> See Project </Button>
                   </Card.Body>
@@ -653,8 +654,8 @@ class App extends React.Component {
                   <Card.Img variant="top" src={DHF_Card} width="100%" height="auto" />
                   <Card.Body>
                     <Card.Title> Dad's Home Foundation </Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">  ReactJS, React Bootstrap, NodeJS, AWS, Strapi CMS, and many more. </Card.Subtitle>
-                    <Card.Text> An MVP for a non-profit fundraising organisation.
+                    <Card.Subtitle className="mb-2 text-muted">  Vectr & InVision Studio </Card.Subtitle>
+                    <Card.Text> UI design for a non-profit charity website. 
                     </Card.Text>
                     <Button variant="primary" id="project_button"> See Project </Button>
                   </Card.Body>
@@ -665,7 +666,7 @@ class App extends React.Component {
                   <Card.Body>
                     <Card.Title> SEER Website </Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">  ReactJS, React Bootstrap, Heroku. </Card.Subtitle>
-                    <Card.Text> A third year project for a repository strictly for Software Engineering related studies/researches/articles. Based largely on ScienceDirect.
+                    <Card.Text> A third year project based on ScienceDirect for a Software Engineering evidences repository.
                     </Card.Text>
                     <Button variant="primary" id="project_button"> See Project </Button>
                   </Card.Body>
@@ -701,7 +702,7 @@ class App extends React.Component {
                 <Col md={4}>
                   <p id="footer_header"> For employers </p>
                   <p><a id="footer_desc" href="https://docs.google.com/document/d/15-zNXyYNb5HW8aOzQFOw4jzlYUGow4FcUdzRTf-JeGg/edit?usp=sharing">  My CV/Resume</a></p>
-                  <p id="footer_desc"> My Working Visa</p>
+                  <p><a id="footer_desc" href="./Assets/Projects/MyVisa.pdf" target="_blank"> My Working Visa</a></p>
                 </Col>
 
                 <Col md={4}>
@@ -974,8 +975,8 @@ class App extends React.Component {
                     <Card.Img variant="top" src={DHF_Card} width="100%" height="auto" />
                     <Card.Body>
                       <Card.Title> Dad's Home Foundation </Card.Title>
-                      <Card.Subtitle className="mb-2 text-muted">  ReactJS, React Bootstrap, NodeJS, AWS, Strapi CMS, and many more. </Card.Subtitle>
-                      <Card.Text> An MVP for a non-profit fundraising organisation.
+                      <Card.Subtitle className="mb-2 text-muted">  Vetrc & InVision Studio </Card.Subtitle>
+                      <Card.Text> UI design for a non-profit fundraising organisation.
                     </Card.Text>
                       <Button variant="primary" id="project_button"> See Project </Button>
                     </Card.Body>
@@ -987,7 +988,7 @@ class App extends React.Component {
                     <Card.Body>
                       <Card.Title> SEER Website </Card.Title>
                       <Card.Subtitle className="mb-2 text-muted">  ReactJS, React Bootstrap, Heroku. </Card.Subtitle>
-                      <Card.Text> A third year project for a repository strictly for Software Engineering related studies/researches/articles. Based largely on ScienceDirect.
+                      <Card.Text> 
                     </Card.Text>
                       <Button variant="primary" id="project_button"> See Project </Button>
                     </Card.Body>
@@ -1022,7 +1023,7 @@ class App extends React.Component {
                 <Col md={4}>
                   <p id="footer_header"> For employers </p>
                   <p><a id="footer_desc" href="https://docs.google.com/document/d/15-zNXyYNb5HW8aOzQFOw4jzlYUGow4FcUdzRTf-JeGg/edit?usp=sharing">  My CV/Resume</a></p>
-                  <p id="footer_desc"> My Working Visa</p>
+                  <p><a id="footer_desc" href="./Assets/Projects/MyVisa.pdf" target="_blank"> My Working Visa</a></p>
                 </Col>
 
                 <Col md={4}>
