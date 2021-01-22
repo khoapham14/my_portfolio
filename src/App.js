@@ -5,7 +5,8 @@ import { Link } from 'react-scroll';
 import React from "react";
 import { init } from "emailjs-com";
 import emailjs from "emailjs-com";
-import swal from 'sweetalert';
+import swal from 'sweetalert2';
+import ReCAPTCHA from "react-google-recaptcha";
 
 // Images, Icons and Logos
 import Logo from './Assets/Icons/Logo_White.svg';
@@ -25,6 +26,10 @@ import Simp_Card from './Assets/Projects/SimpliCT.png';
 import DHF_Card from './Assets/Projects/DHF_Card.png';
 import SEER_Card from './Assets/Projects/SEER.png';
 
+// Documents
+import mycv from './Assets/Projects/MyCV.pdf';
+import myvisa from './Assets/Projects/MyVisa.pdf';
+
 
 class App extends React.Component {
   constructor() {
@@ -35,6 +40,7 @@ class App extends React.Component {
       name: '',
       email: '',
       message: '',
+      captcha: false,
     };
 
     this.handleScroll = this.handleScroll.bind(this);
@@ -42,6 +48,7 @@ class App extends React.Component {
     this.onNameChange = this.onNameChange.bind(this);
     this.onEmailChange = this.onEmailChange.bind(this);
     this.onMessageChange = this.onMessageChange.bind(this);
+    this.onChange = this.onChange.bind(this);
   }
 
   componentDidMount() {
@@ -75,6 +82,11 @@ class App extends React.Component {
     this.setState({ message: event.target.value });
   }
 
+  onChange(value){
+    console.log("Captcha value:", value);
+    this.setState({ captcha: true});
+  }
+
   handleSubmit(event) {
     event.preventDefault();
 
@@ -87,13 +99,19 @@ class App extends React.Component {
       message: this.state.message,
     };
 
+    this.setState({
+      name: '',
+      message: '',
+      email: '',
+    });
+
     emailjs.send('service_ox9rv0q', 'template_dqz39gi', emailParams)
       .then(function (response) {
         console.log('SUCCESS!', response.status, response.text);
-        swal("Success", "Your message has been sent!", "succsess");
+        swal.fire("Success", "Your message has been sent!", "success");
       }, function (error) {
         console.log('FAILED...', error);
-        swal("Uh oh!", "An error occured! Please try again later.",);
+        swal.fire("Uh oh!", "An error occured! Please try again later.",);
       });
   }
 
@@ -308,7 +326,8 @@ class App extends React.Component {
                         <Form.Label> Message: </Form.Label>
                         <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" onChange={this.onMessageChange} />
                       </Form.Group>
-                      <Button variant="outline-light" type="submit"> Submit </Button>
+                      <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
+                      <Button disabled={this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
                     </Form>
                   </Col>
                 </Col>
@@ -394,8 +413,8 @@ class App extends React.Component {
 
                 <Col md={4}>
                   <p id="footer_header"> For employers </p>
-                  <p><a id="footer_desc" href="https://docs.google.com/document/d/15-zNXyYNb5HW8aOzQFOw4jzlYUGow4FcUdzRTf-JeGg/edit?usp=sharing">  My CV/Resume</a></p>
-                  <p><a id="footer_desc" href="./Assets/Projects/MyVisa.pdf" target="_blank"> My Working Visa</a></p>
+                  <p><a id="footer_desc" href={mycv}>  My CV/Resume</a></p>
+                  <p><a id="footer_desc" href={myvisa} rel="noreferrer" target="_blank"> My Working Visa</a></p>
                 </Col>
 
                 <Col md={4}>
@@ -612,7 +631,8 @@ class App extends React.Component {
                         <Form.Label> Message: </Form.Label>
                         <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" onChange={this.onMessageChange} />
                       </Form.Group>
-                      <Button variant="outline-light" type="submit"> Submit </Button>
+                      <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
+                      <Button disabled={this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
                     </Form>
                   </Col>
                 </Col>
@@ -655,7 +675,7 @@ class App extends React.Component {
                   <Card.Body>
                     <Card.Title> Dad's Home Foundation </Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">  Vectr & InVision Studio </Card.Subtitle>
-                    <Card.Text> UI design for a non-profit charity website. 
+                    <Card.Text> UI design for a non-profit charity website.
                     </Card.Text>
                     <Button variant="primary" id="project_button"> See Project </Button>
                   </Card.Body>
@@ -701,8 +721,8 @@ class App extends React.Component {
 
                 <Col md={4}>
                   <p id="footer_header"> For employers </p>
-                  <p><a id="footer_desc" href="https://docs.google.com/document/d/15-zNXyYNb5HW8aOzQFOw4jzlYUGow4FcUdzRTf-JeGg/edit?usp=sharing">  My CV/Resume</a></p>
-                  <p><a id="footer_desc" href="./Assets/Projects/MyVisa.pdf" target="_blank"> My Working Visa</a></p>
+                  <p><a id="footer_desc" href={mycv}>  My CV/Resume</a></p>
+                  <p><a id="footer_desc" href={myvisa} rel="noreferrer" target="_blank"> My Working Visa</a></p>
                 </Col>
 
                 <Col md={4}>
@@ -928,7 +948,8 @@ class App extends React.Component {
                         <Form.Label> Message: </Form.Label>
                         <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" onChange={this.onMessageChange} />
                       </Form.Group>
-                      <Button variant="outline-light" type="submit"> Submit </Button>
+                      <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
+                      <Button disabled={this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
                     </Form>
                   </Col>
                 </Col>
@@ -988,8 +1009,8 @@ class App extends React.Component {
                     <Card.Body>
                       <Card.Title> SEER Website </Card.Title>
                       <Card.Subtitle className="mb-2 text-muted">  ReactJS, React Bootstrap, Heroku. </Card.Subtitle>
-                      <Card.Text> 
-                    </Card.Text>
+                      <Card.Text>
+                      </Card.Text>
                       <Button variant="primary" id="project_button"> See Project </Button>
                     </Card.Body>
                   </Card>
@@ -1022,8 +1043,8 @@ class App extends React.Component {
 
                 <Col md={4}>
                   <p id="footer_header"> For employers </p>
-                  <p><a id="footer_desc" href="https://docs.google.com/document/d/15-zNXyYNb5HW8aOzQFOw4jzlYUGow4FcUdzRTf-JeGg/edit?usp=sharing">  My CV/Resume</a></p>
-                  <p><a id="footer_desc" href="./Assets/Projects/MyVisa.pdf" target="_blank"> My Working Visa</a></p>
+                  <p><a id="footer_desc" href={mycv}>  My CV/Resume</a></p>
+                  <p><a id="footer_desc" href={myvisa} rel="noreferrer" target="_blank"> My Working Visa</a></p>
                 </Col>
 
                 <Col md={4}>

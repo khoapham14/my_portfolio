@@ -100,13 +100,13 @@ body{
 }
 
 #skills_header{
-  color: #4f4f4f;
+  color: #21DDEE;
   font-size: 3em;
   font-weight: 700;
 }
 
 #skills_sub_header{
-  color: #4f4f4f;
+  color:  #21DDEE;
   font-size: 2em;
   font-weight: 400;
   line-height: 0;
@@ -199,7 +199,7 @@ body{
 }
 
 #projects_header{
-  color: #4f4f4f;
+  color: #21DDEE;
   text-align: center;
   font-size: 3em;
   font-weight: 700;
