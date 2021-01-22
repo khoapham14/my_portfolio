@@ -45,6 +45,7 @@ body{
 
 #nav-link:hover{
   background-size: 0 2px, 100% 2px;
+  cursor: pointer;
 }
 
 
@@ -137,7 +138,7 @@ body{
   background-image: url("Assets/empty-underwater-blue-shine-abstract-background-light-bright-clean-ocean-sea/42065.jpg");
   height: 100vh;
   width: auto;
-  min-height: 720px;
+  min-height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -162,12 +163,20 @@ body{
   margin-top: 1em;
 }
 
+#contact_icons_container{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contact_icons{
   margin-bottom: 3em;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+
 
 #contact_text{
   color: #FFFFFF;

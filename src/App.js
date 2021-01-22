@@ -82,9 +82,9 @@ class App extends React.Component {
     this.setState({ message: event.target.value });
   }
 
-  onChange(value){
+  onChange(value) {
     console.log("Captcha value:", value);
-    this.setState({ captcha: true});
+    this.setState({ captcha: true });
   }
 
   handleSubmit(event) {
@@ -92,27 +92,32 @@ class App extends React.Component {
 
     init("user_ZuCRyzWfalPE8iWX4tLWc");
 
-    var emailParams = {
-      from_name: this.state.name,
-      to_name: "Khoa Pham",
-      from_email: this.state.email,
-      message: this.state.message,
-    };
+    if (this.state.name.length === 0 || this.state.email.length === 0 || this.state.message.length <= 10) {
+      swal.fire("Error!", "Please enter your name, email and a message with at least 10 characters!", "error");
+    }
+    else {
+      var emailParams = {
+        from_name: this.state.name,
+        to_name: "Khoa Pham",
+        from_email: this.state.email,
+        message: this.state.message,
+      };
+
+
+      emailjs.send('service_ox9rv0q', 'template_dqz39gi', emailParams)
+        .then(function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+          swal.fire("Success", "Your message has been sent!", "success");
+        }, function (error) {
+          console.log('FAILED...', error);
+          swal.fire("Uh oh!", "An error occured! Please try again later.", "error");
+        });
+    }
 
     this.setState({
-      name: '',
-      message: '',
-      email: '',
-    });
+      name: "",
 
-    emailjs.send('service_ox9rv0q', 'template_dqz39gi', emailParams)
-      .then(function (response) {
-        console.log('SUCCESS!', response.status, response.text);
-        swal.fire("Success", "Your message has been sent!", "success");
-      }, function (error) {
-        console.log('FAILED...', error);
-        swal.fire("Uh oh!", "An error occured! Please try again later.",);
-      });
+    });
   }
 
   handleWindowSizeChange = () => {
@@ -143,9 +148,9 @@ class App extends React.Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" className="justify-content-end" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                   <Nav className="mr-auto justify-content-end">
-                    <Nav.Link ><Link to="skills_section" spy={true} smooth={true} id="nav-link"> My Skills </Link></Nav.Link>
-                    <Nav.Link > <Link to="contact_section" spy={true} smooth={true} id="nav-link"> Contact Me </Link></Nav.Link>
-                    <Nav.Link > <Link to="projects_section" spy={true} smooth={true} id="nav-link"> My Projects </Link></Nav.Link>
+                    <Link to="skills_section" spy={true} smooth={true} id="nav-link"> My Skills </Link>
+                    <Link to="contact_section" spy={true} smooth={true} id="nav-link"> Contact Me </Link>
+                    <Link to="projects_section" spy={true} smooth={true} id="nav-link"> My Projects </Link>
                   </Nav>
                 </Navbar.Collapse>
               </Navbar>
@@ -279,37 +284,50 @@ class App extends React.Component {
                 <Col id="media_links">
                   <p id="contact_sub_header"> Find me on these platforms: </p>
                   <Row>
-                    <img
-                      src={Email}
-                      height="40em"
-                      width="auto"
-                      alt="Mail Logo"
-                      className="contact_icons"
-                    />
-
-                    <img
-                      src={Facebook}
-                      height="40em"
-                      width="auto"
-                      alt="Mail Logo"
-                      className="contact_icons"
-                    />
-
-                    <img
-                      src={Github}
-                      height="40em"
-                      width="auto"
-                      alt="Mail Logo"
-                      className="contact_icons"
-                    />
-
-                    <img
-                      src={LinkedIn}
-                      height="40em"
-                      width="auto"
-                      alt="Mail Logo"
-                      className="contact_icons"
-                    />
+                    <Col md={3} xs={3}>
+                      <a href="mailto: cody.pham14@gmail.com">
+                        <img
+                          src={Email}
+                          height="40em"
+                          width="auto"
+                          alt="Mail Logo"
+                          className="contact_icons"
+                        />
+                      </a>
+                    </Col>
+                    <Col md={3} xs={3}>
+                      <a href="https://www.facebook.com/cody.vatc2/">
+                        <img
+                          src={Facebook}
+                          height="40em"
+                          width="auto"
+                          alt="Mail Logo"
+                          className="contact_icons"
+                        />
+                      </a>
+                    </Col>
+                    <Col md={3} xs={3}>
+                      <a href="https://github.com/asianlanlord">
+                        <img
+                          src={Github}
+                          height="40em"
+                          width="auto"
+                          alt="Mail Logo"
+                          className="contact_icons"
+                        />
+                      </a>
+                    </Col>
+                    <Col md={3} xs={3}>
+                      <a href="https://www.linkedin.com/in/khoa-pham-9773261ba/">
+                        <img
+                          src={LinkedIn}
+                          height="40em"
+                          width="auto"
+                          alt="Mail Logo"
+                          className="contact_icons"
+                        />
+                      </a>
+                    </Col>
                   </Row>
                   <p id="contact_sub_header"> Send me a message here: </p>
                   <Col md={10} id="contact_form">
@@ -327,7 +345,7 @@ class App extends React.Component {
                         <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" onChange={this.onMessageChange} />
                       </Form.Group>
                       <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
-                      <Button disabled={this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
+                      <Button disabled={!this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
                     </Form>
                   </Col>
                 </Col>
@@ -348,7 +366,7 @@ class App extends React.Component {
                     <Card.Text> We Are Us is a platform similar to Airbnb but
                     dedicated to health, wellness & self-improvement businesses.
                       </Card.Text>
-                    <Button variant="primary" id="project_button"> See Project </Button>
+                    <Button variant="primary" id="project_button" href="https://github.com/LyleBranzuela/weareus-mvp-website"> See Project </Button>
                   </Card.Body>
                 </Card>
                 <Card style={{ width: '65%' }}>
@@ -358,7 +376,7 @@ class App extends React.Component {
                     <Card.Subtitle className="mb-2 text-muted">   </Card.Subtitle>
                     <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
                       </Card.Text>
-                    <Button variant="primary" id="project_button"> See Project </Button>
+                    <Button variant="primary" id="project_button" href="https://github.com/asianlanlord/simplict"> See Project </Button>
                   </Card.Body>
                 </Card>
 
@@ -369,7 +387,7 @@ class App extends React.Component {
                     <Card.Subtitle className="mb-2 text-muted">  Vectr and InVision Studio </Card.Subtitle>
                     <Card.Text> UI Design for a non-profit fundraising organisation.
                       </Card.Text>
-                    <Button variant="primary" id="project_button"> See Project </Button>
+                    <Button variant="primary" id="project_button" href="https://projects.invisionapp.com/prototype/DHF-Sketch-ckintx7o1004x2701iyrmwexa"> See Project </Button>
                   </Card.Body>
                 </Card>
 
@@ -380,7 +398,7 @@ class App extends React.Component {
                     <Card.Subtitle className="mb-2 text-muted">  ReactJS, React Bootstrap, Heroku. </Card.Subtitle>
                     <Card.Text> A third year project for a repository strictly for Software Engineering related studies/researches/articles. Based largely on ScienceDirect.
                       </Card.Text>
-                    <Button variant="primary" id="project_button"> See Project </Button>
+                    <Button variant="primary" id="project_button" href="https://se-evidence-repo.herokuapp.com/"> See Project </Button>
                   </Card.Body>
                 </Card>
 
@@ -450,9 +468,9 @@ class App extends React.Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" className="justify-content-end" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                   <Nav className="mr-auto justify-content-end">
-                    <Nav.Link ><Link to="skills_section" spy={true} smooth={true} id="nav-link"> My Skills </Link></Nav.Link>
-                    <Nav.Link > <Link to="contact_section" spy={true} smooth={true} id="nav-link"> Contact Me </Link></Nav.Link>
-                    <Nav.Link > <Link to="projects_section" spy={true} smooth={true} id="nav-link"> My Projects </Link></Nav.Link>
+                    <Link to="skills_section" spy={true} smooth={true} id="nav-link"> My Skills </Link>
+                    <Link to="contact_section" spy={true} smooth={true} id="nav-link"> Contact Me </Link>
+                    <Link to="projects_section" spy={true} smooth={true} id="nav-link"> My Projects </Link>
                   </Nav>
                 </Navbar.Collapse>
               </Navbar>
@@ -584,37 +602,50 @@ class App extends React.Component {
                 <Col id="media_links">
                   <p id="contact_sub_header"> Find me on these platforms: </p>
                   <Row>
-                    <img
-                      src={Email}
-                      height="40em"
-                      width="auto"
-                      alt="Mail Logo"
-                      className="contact_icons"
-                    />
-
-                    <img
-                      src={Facebook}
-                      height="40em"
-                      width="auto"
-                      alt="Mail Logo"
-                      className="contact_icons"
-                    />
-
-                    <img
-                      src={Github}
-                      height="40em"
-                      width="auto"
-                      alt="Mail Logo"
-                      className="contact_icons"
-                    />
-
-                    <img
-                      src={LinkedIn}
-                      height="40em"
-                      width="auto"
-                      alt="Mail Logo"
-                      className="contact_icons"
-                    />
+                    <Col md={3} xs={3}>
+                      <a href="mailto: cody.pham14@gmail.com">
+                        <img
+                          src={Email}
+                          height="40em"
+                          width="auto"
+                          alt="Mail Logo"
+                          className="contact_icons"
+                        />
+                      </a>
+                    </Col>
+                    <Col md={3} xs={3}>
+                      <a href="https://www.facebook.com/cody.vatc2/">
+                        <img
+                          src={Facebook}
+                          height="40em"
+                          width="auto"
+                          alt="Mail Logo"
+                          className="contact_icons"
+                        />
+                      </a>
+                    </Col>
+                    <Col md={3} xs={3}>
+                      <a href="https://github.com/asianlanlord">
+                        <img
+                          src={Github}
+                          height="40em"
+                          width="auto"
+                          alt="Mail Logo"
+                          className="contact_icons"
+                        />
+                      </a>
+                    </Col>
+                    <Col md={3} xs={3}>
+                      <a href="https://www.linkedin.com/in/khoa-pham-9773261ba/">
+                        <img
+                          src={LinkedIn}
+                          height="40em"
+                          width="auto"
+                          alt="Mail Logo"
+                          className="contact_icons"
+                        />
+                      </a>
+                    </Col>
                   </Row>
                   <p id="contact_sub_header"> Send me a message here: </p>
                   <Col md={10} id="contact_form">
@@ -632,7 +663,7 @@ class App extends React.Component {
                         <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" onChange={this.onMessageChange} />
                       </Form.Group>
                       <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
-                      <Button disabled={this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
+                      <Button disabled={!this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
                     </Form>
                   </Col>
                 </Col>
@@ -653,7 +684,7 @@ class App extends React.Component {
                     <Card.Text> We Are Us is a platform similar to Airbnb but
                     dedicated to promoting health, wellness & self-improvement businesses.
                     </Card.Text>
-                    <Button variant="primary" id="project_button"> See Project </Button>
+                    <Button variant="primary" id="project_button" href="https://github.com/LyleBranzuela/weareus-mvp-website"> See Project </Button>
                   </Card.Body>
                 </Card>
                 <Card style={{ width: '65%' }}>
@@ -663,7 +694,7 @@ class App extends React.Component {
                     <Card.Subtitle className="mb-2 text-muted">   </Card.Subtitle>
                     <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
                     </Card.Text>
-                    <Button variant="primary" id="project_button"> See Project </Button>
+                    <Button variant="primary" id="project_button" href="https://github.com/asianlanlord/simplict"> See Project </Button>
                   </Card.Body>
                 </Card>
 
@@ -677,7 +708,7 @@ class App extends React.Component {
                     <Card.Subtitle className="mb-2 text-muted">  Vectr & InVision Studio </Card.Subtitle>
                     <Card.Text> UI design for a non-profit charity website.
                     </Card.Text>
-                    <Button variant="primary" id="project_button"> See Project </Button>
+                    <Button variant="primary" id="project_button" href="https://projects.invisionapp.com/prototype/DHF-Sketch-ckintx7o1004x2701iyrmwexa"> See Project </Button>
                   </Card.Body>
                 </Card>
 
@@ -688,7 +719,7 @@ class App extends React.Component {
                     <Card.Subtitle className="mb-2 text-muted">  ReactJS, React Bootstrap, Heroku. </Card.Subtitle>
                     <Card.Text> A third year project based on ScienceDirect for a Software Engineering evidences repository.
                     </Card.Text>
-                    <Button variant="primary" id="project_button"> See Project </Button>
+                    <Button variant="primary" id="project_button" href="https://se-evidence-repo.herokuapp.com/"> See Project </Button>
                   </Card.Body>
                 </Card>
 
@@ -756,9 +787,9 @@ class App extends React.Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" className="justify-content-end" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                   <Nav className="ml-auto justify-content-end">
-                    <Nav.Link ><Link to="skills_section" spy={true} smooth={true} id="nav-link"> My Skills </Link></Nav.Link>
-                    <Nav.Link > <Link to="contact_section" spy={true} smooth={true} id="nav-link"> Contact Me </Link></Nav.Link>
-                    <Nav.Link > <Link to="projects_section" spy={true} smooth={true} id="nav-link"> My Projects </Link></Nav.Link>
+                    <Link to="skills_section" spy={true} smooth={true} id="nav-link"> My Skills </Link>
+                    <Link to="contact_section" spy={true} smooth={true} id="nav-link"> Contact Me </Link>
+                    <Link to="projects_section" spy={true} smooth={true} id="nav-link"> My Projects </Link>
                   </Nav>
                 </Navbar.Collapse>
               </Navbar>
@@ -891,40 +922,46 @@ class App extends React.Component {
                   <Row>
                     <Col md={2}></Col>
                     <Col md={2}>
-                      <img
-                        src={Email}
-                        height="40em"
-                        width="auto"
-                        alt="Mail Logo"
-                        className="contact_icons"
-                      />
+                      <a href="mailto: cody.pham14@gmail.com">
+                        <img
+                          src={Email}
+                          height="40em"
+                          width="auto"
+                          alt="Mail Logo"
+                          className="contact_icons"
+                        />
+                      </a>
+                      <a href="https://www.facebook.com/cody.vatc2/">
+                        <img
+                          src={Facebook}
+                          height="40em"
+                          width="auto"
+                          alt="Mail Logo"
+                          className="contact_icons"
+                        />
+                      </a>
+                      <a href="https://github.com/asianlanlord">
+                        <img
+                          src={Github}
+                          height="40em"
+                          width="auto"
+                          alt="Mail Logo"
+                          className="contact_icons"
+                        />
+                      </a>
 
-                      <img
-                        src={Facebook}
-                        height="40em"
-                        width="auto"
-                        alt="Mail Logo"
-                        className="contact_icons"
-                      />
-
-                      <img
-                        src={Github}
-                        height="40em"
-                        width="auto"
-                        alt="Mail Logo"
-                        className="contact_icons"
-                      />
-
-                      <img
-                        src={LinkedIn}
-                        height="40em"
-                        width="auto"
-                        alt="Mail Logo"
-                        className="contact_icons"
-                      />
+                      <a href="https://www.linkedin.com/in/khoa-pham-9773261ba/">
+                        <img
+                          src={LinkedIn}
+                          height="40em"
+                          width="auto"
+                          alt="Mail Logo"
+                          className="contact_icons"
+                        />
+                      </a>
                     </Col>
                     <Col md={6}>
-                      <p id="contact_text"> cody.pham14@gmail.com </p>
+                      <p id="contact_text">  cody.pham14@gmail.com</p>
                       <p id="contact_text"> Pham Anh Khoa </p>
                       <p id="contact_text"> asianlanlord </p>
                       <p id="contact_text"> Khoa Pham </p>
@@ -948,8 +985,9 @@ class App extends React.Component {
                         <Form.Label> Message: </Form.Label>
                         <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" onChange={this.onMessageChange} />
                       </Form.Group>
-                      <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
-                      <Button disabled={this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
+                      {/* Test key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI     Real Key: 6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx*/}
+                      <ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={this.onChange} />
+                      <Button disabled={!this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
                     </Form>
                   </Col>
                 </Col>
@@ -971,7 +1009,7 @@ class App extends React.Component {
                       <Card.Text> We Are Us is a platform similar to Airbnb but
                       dedicated to health, wellness & self-improvement businesses.
                     </Card.Text>
-                      <Button variant="primary" id="project_button"> See Project </Button>
+                      <Button variant="primary" id="project_button" href="https://github.com/LyleBranzuela/weareus-mvp-website"> See Project </Button>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -983,7 +1021,7 @@ class App extends React.Component {
                       <Card.Subtitle className="mb-2 text-muted">   </Card.Subtitle>
                       <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
                     </Card.Text>
-                      <Button variant="primary" id="project_button"> See Project </Button>
+                      <Button variant="primary" id="project_button" href="https://github.com/asianlanlord/simplict"> See Project </Button>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -999,7 +1037,7 @@ class App extends React.Component {
                       <Card.Subtitle className="mb-2 text-muted">  Vetrc & InVision Studio </Card.Subtitle>
                       <Card.Text> UI design for a non-profit fundraising organisation.
                     </Card.Text>
-                      <Button variant="primary" id="project_button"> See Project </Button>
+                      <Button variant="primary" id="project_button" href="https://projects.invisionapp.com/prototype/DHF-Sketch-ckintx7o1004x2701iyrmwexa"> See Project </Button>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -1009,9 +1047,9 @@ class App extends React.Component {
                     <Card.Body>
                       <Card.Title> SEER Website </Card.Title>
                       <Card.Subtitle className="mb-2 text-muted">  ReactJS, React Bootstrap, Heroku. </Card.Subtitle>
-                      <Card.Text>
+                      <Card.Text> A third year project for a repository strictly for Software Engineering related studies/researches/articles. Based largely on ScienceDirect.
                       </Card.Text>
-                      <Button variant="primary" id="project_button"> See Project </Button>
+                      <Button variant="primary" id="project_button" href="https://se-evidence-repo.herokuapp.com/"> See Project </Button>
                     </Card.Body>
                   </Card>
                 </Col>
