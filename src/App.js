@@ -986,7 +986,7 @@ class App extends React.Component {
                         <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" onChange={this.onMessageChange} />
                       </Form.Group>
                       {/* Test key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI     Real Key: 6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx*/}
-                      <ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={this.onChange} />
+                      <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
                       <Button disabled={!this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
                     </Form>
                   </Col>
