@@ -366,7 +366,7 @@ class App extends React.Component {
                     <Card.Text> We Are Us is a platform similar to Airbnb but
                     dedicated to health, wellness & self-improvement businesses.
                       </Card.Text>
-                    <Button variant="primary" id="project_button" href="https://github.com/LyleBranzuela/weareus-mvp-website"> See Project </Button>
+                    <Button variant="primary" id="project_button" href="http://54.66.121.53/home"> See Project </Button>
                   </Card.Body>
                 </Card>
                 <Card style={{ width: '65%' }}>
@@ -376,7 +376,7 @@ class App extends React.Component {
                     <Card.Subtitle className="mb-2 text-muted">   </Card.Subtitle>
                     <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
                       </Card.Text>
-                    <Button variant="primary" id="project_button" href="https://github.com/asianlanlord/simplict"> See Project </Button>
+                    <Button variant="primary" id="project_button" href="https://asianlanlord.github.io/simplict/"> See Project </Button>
                   </Card.Body>
                 </Card>
 
@@ -431,8 +431,8 @@ class App extends React.Component {
 
                 <Col md={4}>
                   <p id="footer_header"> For employers </p>
-                  <p><a id="footer_desc" href={mycv}>  My CV/Resume</a></p>
-                  <p><a id="footer_desc" href={myvisa} rel="noreferrer" target="_blank"> My Working Visa</a></p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1o_-yENBp4xc_hzP8pDWQNmkWnRSWP_8d/view?usp=sharing">  My CV/Resume</a></p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
                 </Col>
 
                 <Col md={4}>
@@ -684,7 +684,7 @@ class App extends React.Component {
                     <Card.Text> We Are Us is a platform similar to Airbnb but
                     dedicated to promoting health, wellness & self-improvement businesses.
                     </Card.Text>
-                    <Button variant="primary" id="project_button" href="https://github.com/LyleBranzuela/weareus-mvp-website"> See Project </Button>
+                    <Button variant="primary" id="project_button" href="http://54.66.121.53/home"> See Project </Button>
                   </Card.Body>
                 </Card>
                 <Card style={{ width: '65%' }}>
@@ -694,7 +694,7 @@ class App extends React.Component {
                     <Card.Subtitle className="mb-2 text-muted">   </Card.Subtitle>
                     <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
                     </Card.Text>
-                    <Button variant="primary" id="project_button" href="https://github.com/asianlanlord/simplict"> See Project </Button>
+                    <Button variant="primary" id="project_button" href="https://asianlanlord.github.io/simplict/"> See Project </Button>
                   </Card.Body>
                 </Card>
 
@@ -752,8 +752,8 @@ class App extends React.Component {
 
                 <Col md={4}>
                   <p id="footer_header"> For employers </p>
-                  <p><a id="footer_desc" href={mycv}>  My CV/Resume</a></p>
-                  <p><a id="footer_desc" href={myvisa} rel="noreferrer" target="_blank"> My Working Visa</a></p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1o_-yENBp4xc_hzP8pDWQNmkWnRSWP_8d/view?usp=sharing">  My CV/Resume</a></p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
                 </Col>
 
                 <Col md={4}>
@@ -1009,7 +1009,7 @@ class App extends React.Component {
                       <Card.Text> We Are Us is a platform similar to Airbnb but
                       dedicated to health, wellness & self-improvement businesses.
                     </Card.Text>
-                      <Button variant="primary" id="project_button" href="https://github.com/LyleBranzuela/weareus-mvp-website"> See Project </Button>
+                      <Button variant="primary" id="project_button" href="http://54.66.121.53/home"> See Project </Button>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -1021,7 +1021,7 @@ class App extends React.Component {
                       <Card.Subtitle className="mb-2 text-muted">   </Card.Subtitle>
                       <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
                     </Card.Text>
-                      <Button variant="primary" id="project_button" href="https://github.com/asianlanlord/simplict"> See Project </Button>
+                      <Button variant="primary" id="project_button" href="https://asianlanlord.github.io/simplict/"> See Project </Button>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -1081,8 +1081,8 @@ class App extends React.Component {
 
                 <Col md={4}>
                   <p id="footer_header"> For employers </p>
-                  <p><a id="footer_desc" href={mycv}>  My CV/Resume</a></p>
-                  <p><a id="footer_desc" href={myvisa} rel="noreferrer" target="_blank"> My Working Visa</a></p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1o_-yENBp4xc_hzP8pDWQNmkWnRSWP_8d/view?usp=sharing">  My CV/Resume</a></p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
                 </Col>
 
                 <Col md={4}>
