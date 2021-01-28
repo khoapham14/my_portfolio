@@ -26,10 +26,6 @@ import Simp_Card from './Assets/Projects/SimpliCT.png';
 import DHF_Card from './Assets/Projects/DHF_Card.png';
 import SEER_Card from './Assets/Projects/SEER.png';
 
-// Documents
-import mycv from './Assets/Projects/MyCV.pdf';
-import myvisa from './Assets/Projects/MyVisa.pdf';
-
 
 class App extends React.Component {
   constructor() {
@@ -103,7 +99,6 @@ class App extends React.Component {
         message: this.state.message,
       };
 
-
       emailjs.send('service_ox9rv0q', 'template_dqz39gi', emailParams)
         .then(function (response) {
           console.log('SUCCESS!', response.status, response.text);
@@ -116,7 +111,8 @@ class App extends React.Component {
 
     this.setState({
       name: "",
-
+      email: "",
+      message: "",
     });
   }
 
@@ -373,7 +369,7 @@ class App extends React.Component {
                   <Card.Img variant="top" src={Simp_Card} width="100%" height="auto" />
                   <Card.Body>
                     <Card.Title> SimpliCT </Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">   </Card.Subtitle>
+                    <Card.Subtitle className="mb-2 text-muted">  ReactJS, Bootstrap, Graph.js, Github Pages. </Card.Subtitle>
                     <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
                       </Card.Text>
                     <Button variant="primary" id="project_button" href="https://asianlanlord.github.io/simplict/"> See Project </Button>
@@ -691,7 +687,7 @@ class App extends React.Component {
                   <Card.Img variant="top" src={Simp_Card} width="100%" height="auto" />
                   <Card.Body>
                     <Card.Title> SimpliCT </Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">   </Card.Subtitle>
+                    <Card.Subtitle className="mb-2 text-muted"> ReactJS, Bootstrap, Graph.js, Github Pages.  </Card.Subtitle>
                     <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
                     </Card.Text>
                     <Button variant="primary" id="project_button" href="https://asianlanlord.github.io/simplict/"> See Project </Button>
@@ -1018,7 +1014,7 @@ class App extends React.Component {
                     <Card.Img variant="top" src={Simp_Card} width="100%" height="auto" />
                     <Card.Body>
                       <Card.Title> SimpliCT </Card.Title>
-                      <Card.Subtitle className="mb-2 text-muted">   </Card.Subtitle>
+                      <Card.Subtitle className="mb-2 text-muted">  ReactJS, Bootstrap, Graph.js, Github Pages. </Card.Subtitle>
                       <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
                     </Card.Text>
                       <Button variant="primary" id="project_button" href="https://asianlanlord.github.io/simplict/"> See Project </Button>
@@ -1034,7 +1030,7 @@ class App extends React.Component {
                     <Card.Img variant="top" src={DHF_Card} width="100%" height="auto" />
                     <Card.Body>
                       <Card.Title> Dad's Home Foundation </Card.Title>
-                      <Card.Subtitle className="mb-2 text-muted">  Vetrc & InVision Studio </Card.Subtitle>
+                      <Card.Subtitle className="mb-2 text-muted">  Vectr & InVision Studio </Card.Subtitle>
                       <Card.Text> UI design for a non-profit fundraising organisation.
                     </Card.Text>
                       <Button variant="primary" id="project_button" href="https://projects.invisionapp.com/prototype/DHF-Sketch-ckintx7o1004x2701iyrmwexa"> See Project </Button>
