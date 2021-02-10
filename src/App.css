@@ -97,7 +97,7 @@ body{
 #skills_section{
   padding-top: 1%;
   text-align: center;
-  background-color: #fcfdfe;
+  background-color: #F8F8F8;
 }
 
 #skills_header{
@@ -176,8 +176,6 @@ body{
   margin-right: auto;
 }
 
-
-
 #contact_text{
   color: #FFFFFF;
   font-size: 1.3em;
@@ -204,7 +202,7 @@ body{
 /* Projects Section */
 #projects_section{
   padding-top: 5vh;
-  background-color: #fcfdfe;
+  background-color:	#F8F8F8;
 }
 
 #projects_header{
