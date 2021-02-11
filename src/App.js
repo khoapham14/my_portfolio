@@ -9,7 +9,8 @@ import swal from 'sweetalert2';
 import ReCAPTCHA from "react-google-recaptcha";
 
 // Images, Icons and Logos
-import Logo from './Assets/Icons/Logo_White.svg';
+import Logo from './Assets/Icons/Logo_Blue.svg';
+import Logo_White from './Assets/Icons/Logo_White.svg';
 import Skill_FrontEnd from './Assets/Icons/Skill_FrontEnd.svg';
 import Skill_PC from './Assets/Icons/Skill_PC.svg';
 import Skill_Java from './Assets/Icons/Skill_Java.svg';
@@ -23,7 +24,7 @@ import Github from './Assets/Icons/github-9-256.png';
 import LinkedIn from './Assets/Icons/linkedin-3-256.png';
 import WAU_Card from './Assets/Projects/We_Are_Us_Card.png';
 import Simp_Card from './Assets/Projects/SimpliCT.png';
-import DHF_Card from './Assets/Projects/DHF_Card.png';
+import Cab_Card from './Assets/Projects/Cab_Booking.png';
 import SEER_Card from './Assets/Projects/SEER.png';
 
 
@@ -135,7 +136,7 @@ class App extends React.Component {
                 <Navbar.Brand>
                   <img
                     src={Logo}
-                    height="80px"
+                    height="50px"
                     width="auto"
                     alt="Khoa's Logo"
                     className="d-inline-block align-top"
@@ -377,13 +378,13 @@ class App extends React.Component {
                 </Card>
 
                 <Card style={{ width: '65%' }}>
-                  <Card.Img variant="top" src={DHF_Card} width="100%" height="auto" />
+                  <Card.Img variant="top" src={Cab_Card} width="100%" height="auto" />
                   <Card.Body>
-                    <Card.Title> Dad's Home Foundation </Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">  Vectr and InVision Studio </Card.Subtitle>
-                    <Card.Text> UI Design for a non-profit fundraising organisation.
-                      </Card.Text>
-                    <Button variant="primary" id="project_button" href="https://projects.invisionapp.com/prototype/DHF-Sketch-ckintx7o1004x2701iyrmwexa"> See Project </Button>
+                    <Card.Title> Cabs Online </Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">  AWS EC-2, Apache, MySQL, PHP, Bootstrap </Card.Subtitle>
+                    <Card.Text> A class assignment to create a simple cab booking system with an administrator page.
+                    </Card.Text>
+                    <Button variant="primary" id="project_button" href="http://ec2-3-106-124-238.ap-southeast-2.compute.amazonaws.com/booking.html"> See Project </Button>
                   </Card.Body>
                 </Card>
 
@@ -400,45 +401,45 @@ class App extends React.Component {
 
               </Row>
             </Container>
+            {/* Footer Section */}
+            <div id="footer">
 
+              <Container>
+                <Row>
+                  <img
+                    src={Logo_White}
+                    height="50px"
+                    width="auto"
+                    alt="Khoa's Logo"
+                    className="d-inline-block align-top"
+                    id="footer_logo"
+                  />
+                </Row>
+                <Row>
+                  <Col md={4}>
+                    <p id="footer_header"> Credits </p>
+                    <p><a id="footer_desc" > Minimalist Mountains from Wallpaper Access</a></p>
+                    <p><a id="footer_desc" href="https://www.vecteezy.com/vector-art/127886-seabed-free-vector" > Seabed Illustration by visionheldup</a></p>
+                  </Col>
+
+                  <Col md={4}>
+                    <p id="footer_header"> For employers </p>
+                    <p><a id="footer_desc" href="https://drive.google.com/file/d/1o_-yENBp4xc_hzP8pDWQNmkWnRSWP_8d/view?usp=sharing">  My CV/Resume</a></p>
+                    <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
+                  </Col>
+
+                  <Col md={4}>
+                    <p id="footer_header">  And finally...</p>
+                    <p id="footer_desc"> Thank you for visiting my website. Have a nice rest of your day!</p>
+                  </Col>
+                </Row>
+
+              </Container>
+            </div>
           </div>
 
 
-          {/* Footer Section */}
-          <div id="footer">
 
-            <Container>
-              <Row>
-                <img
-                  src={Logo}
-                  height="50px"
-                  width="auto"
-                  alt="Khoa's Logo"
-                  className="d-inline-block align-top"
-                  id="footer_logo"
-                />
-              </Row>
-              <Row>
-                <Col md={4}>
-                  <p id="footer_header"> Credits </p>
-                  <p><a id="footer_desc" href="http://www.freepik.com"> Iceberg Illustration by pikisuperstar</a></p>
-                  <p><a id="footer_desc" href="http://www.freepik.com"> Underwater Illustration by macrovector</a></p>
-                </Col>
-
-                <Col md={4}>
-                  <p id="footer_header"> For employers </p>
-                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1o_-yENBp4xc_hzP8pDWQNmkWnRSWP_8d/view?usp=sharing">  My CV/Resume</a></p>
-                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
-                </Col>
-
-                <Col md={4}>
-                  <p id="footer_header">  And finally...</p>
-                  <p id="footer_desc"> Thank you for visiting my website. Have a nice rest of your day!</p>
-                </Col>
-              </Row>
-
-            </Container>
-          </div>
         </div>
 
 
@@ -455,7 +456,7 @@ class App extends React.Component {
                 <Navbar.Brand>
                   <img
                     src={Logo}
-                    height="80px"
+                    height="50px"
                     width="auto"
                     alt="Khoa's Logo"
                     className="d-inline-block align-top"
@@ -698,13 +699,13 @@ class App extends React.Component {
 
 
                 <Card style={{ width: '65%' }}>
-                  <Card.Img variant="top" src={DHF_Card} width="100%" height="auto" />
+                  <Card.Img variant="top" src={Cab_Card} width="100%" height="auto" />
                   <Card.Body>
-                    <Card.Title> Dad's Home Foundation </Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">  Vectr & InVision Studio </Card.Subtitle>
-                    <Card.Text> UI design for a non-profit charity website.
+                    <Card.Title> Cabs Online </Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">  AWS EC-2, Apache, MySQL, PHP, Bootstrap </Card.Subtitle>
+                    <Card.Text> A class assignment to create a simple cab booking system with an administrator page.
                     </Card.Text>
-                    <Button variant="primary" id="project_button" href="https://projects.invisionapp.com/prototype/DHF-Sketch-ckintx7o1004x2701iyrmwexa"> See Project </Button>
+                    <Button variant="primary" id="project_button" href="http://ec2-3-106-124-238.ap-southeast-2.compute.amazonaws.com/booking.html"> See Project </Button>
                   </Card.Body>
                 </Card>
 
@@ -721,45 +722,45 @@ class App extends React.Component {
 
               </Row>
             </Container>
+            {/* Footer Section */}
+            <div id="footer">
 
+              <Container>
+                <Row>
+                  <img
+                    src={Logo_White}
+                    height="50px"
+                    width="auto"
+                    alt="Khoa's Logo"
+                    className="d-inline-block align-top"
+                    id="footer_logo"
+                  />
+                </Row>
+                <Row>
+                  <Col md={4}>
+                    <p id="footer_header"> Credits </p>
+                    <p><a id="footer_desc" > Minimalist Mountains from Wallpaper Access</a></p>
+                    <p><a id="footer_desc" href="https://www.vecteezy.com/vector-art/127886-seabed-free-vector"> Seabed Illustration by visionheldup</a></p>
+                  </Col>
+
+                  <Col md={4}>
+                    <p id="footer_header"> For employers </p>
+                    <p><a id="footer_desc" href="https://drive.google.com/file/d/1o_-yENBp4xc_hzP8pDWQNmkWnRSWP_8d/view?usp=sharing">  My CV/Resume</a></p>
+                    <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
+                  </Col>
+
+                  <Col md={4}>
+                    <p id="footer_header">  And finally...</p>
+                    <p id="footer_desc"> Thank you for visiting my website. Have a nice rest of your day!</p>
+                  </Col>
+                </Row>
+
+              </Container>
+            </div>
           </div>
 
 
-          {/* Footer Section */}
-          <div id="footer">
 
-            <Container>
-              <Row>
-                <img
-                  src={Logo}
-                  height="50px"
-                  width="auto"
-                  alt="Khoa's Logo"
-                  className="d-inline-block align-top"
-                  id="footer_logo"
-                />
-              </Row>
-              <Row>
-                <Col md={4}>
-                  <p id="footer_header"> Credits </p>
-                  <p><a id="footer_desc" href="http://www.freepik.com"> Iceberg Illustration by pikisuperstar</a></p>
-                  <p><a id="footer_desc" href="http://www.freepik.com"> Underwater Illustration by macrovector</a></p>
-                </Col>
-
-                <Col md={4}>
-                  <p id="footer_header"> For employers </p>
-                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1o_-yENBp4xc_hzP8pDWQNmkWnRSWP_8d/view?usp=sharing">  My CV/Resume</a></p>
-                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
-                </Col>
-
-                <Col md={4}>
-                  <p id="footer_header">  And finally...</p>
-                  <p id="footer_desc"> Thank you for visiting my website. Have a nice rest of your day!</p>
-                </Col>
-              </Row>
-
-            </Container>
-          </div>
         </div>
 
       );
@@ -774,7 +775,7 @@ class App extends React.Component {
                 <Navbar.Brand>
                   <img
                     src={Logo}
-                    height="80px"
+                    height="50px"
                     width="auto"
                     alt="Khoa's Logo"
                     className="d-inline-block align-top"
@@ -1027,13 +1028,13 @@ class App extends React.Component {
               <Row>
                 <Col md={6}>
                   <Card style={{ width: '65%' }}>
-                    <Card.Img variant="top" src={DHF_Card} width="100%" height="auto" />
+                    <Card.Img variant="top" src={Cab_Card} width="100%" height="auto" />
                     <Card.Body>
-                      <Card.Title> Dad's Home Foundation </Card.Title>
-                      <Card.Subtitle className="mb-2 text-muted">  Vectr & InVision Studio </Card.Subtitle>
-                      <Card.Text> UI design for a non-profit fundraising organisation.
+                      <Card.Title> Cabs Online </Card.Title>
+                      <Card.Subtitle className="mb-2 text-muted">  AWS EC-2, Apache, MySQL, PHP, Bootstrap </Card.Subtitle>
+                      <Card.Text> A class assignment to create a simple cab booking system with an administrator page.
                     </Card.Text>
-                      <Button variant="primary" id="project_button" href="https://projects.invisionapp.com/prototype/DHF-Sketch-ckintx7o1004x2701iyrmwexa"> See Project </Button>
+                      <Button variant="primary" id="project_button" href="http://ec2-3-106-124-238.ap-southeast-2.compute.amazonaws.com/booking.html"> See Project </Button>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -1051,44 +1052,44 @@ class App extends React.Component {
                 </Col>
               </Row>
             </Container>
+            {/* Footer Section */}
+            <div id="footer">
 
+              <Container>
+                <Row>
+                  <img
+                    src={Logo_White}
+                    height="50px"
+                    width="auto"
+                    alt="Khoa's Logo"
+                    className="d-inline-block align-top"
+                    id="footer_logo"
+                  />
+                </Row>
+                <Row>
+                  <Col md={4}>
+                    <p id="footer_header"> Credits </p>
+                    <p><a id="footer_desc" > Minimalist Mountains from Wallpaper Access</a></p>
+                    <p><a id="footer_desc" href="https://www.vecteezy.com/vector-art/127886-seabed-free-vector"> Seabed Illustration by visionheldup</a></p>
+                  </Col>
+
+                  <Col md={4}>
+                    <p id="footer_header"> For employers </p>
+                    <p><a id="footer_desc" href="https://drive.google.com/file/d/1o_-yENBp4xc_hzP8pDWQNmkWnRSWP_8d/view?usp=sharing">  My CV/Resume</a></p>
+                    <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
+                  </Col>
+
+                  <Col md={4}>
+                    <p id="footer_header">  And finally...</p>
+                    <p id="footer_desc"> Thank you for visiting my website. Have a nice rest of your day!</p>
+                  </Col>
+                </Row>
+
+              </Container>
+            </div>
           </div>
 
-          {/* Footer Section */}
-          <div id="footer">
 
-            <Container>
-              <Row>
-                <img
-                  src={Logo}
-                  height="50px"
-                  width="auto"
-                  alt="Khoa's Logo"
-                  className="d-inline-block align-top"
-                  id="footer_logo"
-                />
-              </Row>
-              <Row>
-                <Col md={4}>
-                  <p id="footer_header"> Credits </p>
-                  <p><a id="footer_desc" href="http://www.freepik.com"> Iceberg Illustration by pikisuperstar</a></p>
-                  <p><a id="footer_desc" href="http://www.freepik.com"> Underwater Illustration by macrovector</a></p>
-                </Col>
-
-                <Col md={4}>
-                  <p id="footer_header"> For employers </p>
-                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1o_-yENBp4xc_hzP8pDWQNmkWnRSWP_8d/view?usp=sharing">  My CV/Resume</a></p>
-                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
-                </Col>
-
-                <Col md={4}>
-                  <p id="footer_header">  And finally...</p>
-                  <p id="footer_desc"> Thank you for visiting my website. Have a nice rest of your day!</p>
-                </Col>
-              </Row>
-
-            </Container>
-          </div>
         </div>
 
       );

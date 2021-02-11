@@ -1,296 +1,307 @@
 /* Global Styles */
 html {
-  scroll-behavior: smooth;
+ scroll-behavior: smooth;
 }
 
-body{
-  font-size: 16px;
+body {
+ font-size: 16px;
 }
 
-
+.btn-outline-light {
+ color: #0e3147;
+ border-color: #0e3147;
+}
 
 /* Intro & Navbar */
-#intro{
-  background-image: url("Assets/iceberg-illustration-concept/4326938.jpg");
-  height: 100vh;
-  min-height: 720px;
-  width: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-top: 0;
-  margin-left: auto;
-  display:block;
-  margin-right: auto;
+#intro {
+ background-image: url("Assets/homepage-bg.jpg");
+ height: 100vh;
+ min-height: 720px;
+ width: auto;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin-top: 0;
+ margin-left: auto;
+ display: block;
+ margin-right: auto;
 }
 
 .navbar-brand {
-  display: flex;
-  align-items: center;
+ display: flex;
+ align-items: center;
 }
 
-#nav-link{
-  color: white !important;
-  font-size: 1.5em;
-  font-weight: 400;
-  text-decoration: none;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-  linear-gradient(#FFFFFF, #FFFFFF);
-  background-size: 100% 2px, 0 2px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.5s linear;
-  margin-left: 1em;
+#nav-link {
+ color: #0e3147 !important;
+ font-size: 1.5em;
+ font-weight: 400;
+ text-decoration: none;
+ background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+  linear-gradient(#0e3147, #0e3147);
+ background-size: 100% 2px, 0 2px;
+ background-position: 100% 100%, 0 100%;
+ background-repeat: no-repeat;
+ transition: background-size 0.5s linear;
+ margin-left: 1em;
 }
 
-#nav-link:hover{
-  background-size: 0 2px, 100% 2px;
-  cursor: pointer;
+#nav-link:hover {
+ background-size: 0 2px, 100% 2px;
+ cursor: pointer;
 }
-
 
 .navbar .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(14, 49, 71, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar .navbar-toggler {
-  border-color: transparent;
-} 
+ border-color: transparent;
+}
 
 #welcome {
-  padding-top: 17%;
-  text-align: center;
+ padding-top: 17%;
+ text-align: center;
 }
 
-#divider{
-  border-color: white;
+#divider {
+ border-color: #0e3147;
 }
 
-#header{
-  color: white;
-  font-size: 4em;
-  font-weight: 500;
-  text-shadow: 1px 1px 1px #4F4F4F;
+#header {
+ color: #0e3147;
+ font-size: 4em;
+ font-weight: 500;
 }
 
 #description {
-  color: white;
-  font-size: 1.7em;
-  font-weight: 300;
-  text-shadow: 1px 1px 1px #4F4F4F;
+ color: #0e3147;
+ font-size: 1.7em;
+ font-weight: 300;
 }
 
-#cta_button{
-  font-size: 1.5em;
-  font-weight: 300;
-  margin-top: 1em;
+#cta_button {
+ font-size: 1.5em;
+ font-weight: 300;
+ margin-top: 1em;
 }
 
 #arrow {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 12%;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 12%;
 }
 
 /* Skills Section */
-#skills_section{
-  padding-top: 1%;
-  text-align: center;
-  background-color: #F8F8F8;
+#skills_section {
+ padding-top: 1%;
+ text-align: center;
+ background-color: #add0ec;
 }
 
-#skills_header{
-  color: #21DDEE;
-  font-size: 3em;
-  font-weight: 700;
+#skills_header {
+ color: #0e3147;
+ font-size: 3em;
+ font-weight: 700;
 }
 
-#skills_sub_header{
-  color:  #21DDEE;
-  font-size: 2em;
-  font-weight: 400;
-  line-height: 0;
+#skills_sub_header {
+ color: #0e3147;
+ font-size: 2em;
+ font-weight: 400;
+ line-height: 0;
 }
 
-#skills{
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+#skills {
+ padding-top: 5vh;
+ padding-bottom: 5vh;
 }
 
 #skill_name {
-  color: #4f4f4f;
-  font-size: 1.7em;
-  font-weight: 500;
+ color: #0e3147;
+ font-size: 1.7em;
+ font-weight: 500;
 }
 
-#skill_desc{
-  color: #4F4F4F;
-  font-size: 1.3em;
-  margin-bottom: 10%;
-  text-align: left;
-  font-weight: 300;
+#skill_desc {
+ color: #0e3147;
+ font-size: 1.3em;
+ margin-bottom: 10%;
+ text-align: left;
+ font-weight: 300;
 }
-
 
 /* Contact Section */
-#contact_section{
-  background-image: url("Assets/empty-underwater-blue-shine-abstract-background-light-bright-clean-ocean-sea/42065.jpg");
-  height: 100vh;
-  width: auto;
-  min-height: 800px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 5vh;
+#contact_section {
+ background-color: #add0ec;
+ height: 100vh;
+ width: auto;
+ min-height: 800px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ padding-top: 5vh;
 }
 
-#contact_header{
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 3em;
-  font-weight: 700;
-  padding-top: 3%;
-  padding-bottom: 3%;
+#contact_header {
+ color: #0e3147;
+ text-align: center;
+ font-size: 3em;
+ font-weight: 700;
+ padding-top: 3%;
+ padding-bottom: 3%;
 }
 
-#contact_sub_header{
-  color: #FFFFFF;
-  font-size: 1.8em;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 2em;
-  margin-top: 1em;
+#contact_sub_header {
+ color: #0e3147;
+ font-size: 1.8em;
+ font-weight: 600;
+ text-align: center;
+ margin-bottom: 2em;
+ margin-top: 1em;
 }
 
-#contact_icons_container{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
+#contact_icons_container {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
 }
 
-.contact_icons{
-  margin-bottom: 3em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.contact_icons {
+ margin-bottom: 3em;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
 }
 
-#contact_text{
-  color: #FFFFFF;
-  font-size: 1.3em;
-  font-weight: 300;
-  margin-bottom: 2.8em;
+#contact_text {
+ color: #0e3147;
+ font-size: 1.3em;
+ font-weight: 300;
+ margin-bottom: 2.8em;
 }
 
-#media_links{
-  border-right: 2px solid #FFFFFF;
+#media_links {
+ border-right: 2px solid #0e3147;
 }
 
 #contact_form {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
 }
 
-.form-label{
-  color: #FFFFFF;
-  font-size: 1.3em;
+.form-label {
+ color: #0e3147;
+ font-size: 1.3em;
 }
-
 
 /* Projects Section */
-#projects_section{
-  padding-top: 5vh;
-  background-color:	#F8F8F8;
+#projects_section {
+ background-image: url("Assets/underwater_modified.png");
+ min-height: 1600px;
+ width: auto;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ padding-top: 5vh;
+ background-color: #f8f8f8;
 }
 
-#projects_header{
-  color: #21DDEE;
-  text-align: center;
-  font-size: 3em;
-  font-weight: 700;
-  padding-top: 3%;
-  padding-bottom: 3%;
+#projects_header {
+ color: #0e3147;
+ text-align: center;
+ font-size: 3em;
+ font-weight: 700;
+ padding-top: 3%;
+ padding-bottom: 3%;
 }
 
-.card{
-  display:block;
-  margin-left:auto;
-  margin-right: auto;
-  margin-bottom: 5%;
+.card {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 5%;
+}
+
+.card-title {
+ color: #0e3147;
+}
+
+.card-subtitle {
+ color: #3d6387;
+}
+
+.card-text {
+ color: #6c90c0;
 }
 
 /* Footer Section */
 #footer {
-  background-color: #0E153A;
-  height: 15em;
+ height: 15em;
+ text-align: center;
+}
+
+#footer_logo {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 2%;
+}
+
+#footer_header {
+ margin-top: 3%;
+ color: #ffffff;
+ font-size: 1.5em;
+ font-weight: 700;
+}
+
+#footer_desc {
+ color: #ffffff;
+ font-size: 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+ body {
+  font-size: 14px;
+ }
+
+ .navbar .navbar-collapse {
+  position: flex;
   text-align: center;
-}
+ }
 
-#footer_logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-}
+ #contact_section {
+  height: 150vh;
+  width: auto;
+  min-height: 720px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 5vh;
+ }
 
-#footer_header{
-  margin-top: 3%;
-  color: #FFFFFF;
-  font-size: 1.5em;
-  font-weight: 700;
-}
+ #media_links {
+  border-right: 0px;
+  padding-bottom: 5%;
+ }
 
-#footer_desc{
-  color: #FFFFFF;
-  font-size: 1em;
-}
-
-
-@media only screen and (max-width: 1000px){
-  body{
-    font-size: 14px;
-  }
-
-  .navbar .navbar-collapse{
-    position: flex;
-    text-align: center;
-  }
-
-  #contact_section{
-    background-image: url("Assets/empty-underwater-blue-shine-abstract-background-light-bright-clean-ocean-sea/42065.jpg");
-    height: 150vh;
-    width: auto;
-    min-height: 720px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 5vh;
-  }
-
-  #media_links{
-    border-right: 0px;
-    padding-bottom: 5%;
-  }
-
-  #footer {
-    background-color: #0E153A;
-    height: 10em;
-    min-height: 500px;
-    text-align: center;
-  }
+ #footer {
+  height: 10em;
+  min-height: 500px;
+  text-align: center;
+ }
 }
 
 @media only screen and (max-width: 770px) {
-  body{
-    font-size: 12px;
-  }
+ body {
+  font-size: 12px;
+ }
 
-  #footer {
-    background-color: #0E153A;
-    height: 50vw;
-    min-height: 500px;
-    text-align: center;
-  }
+ #footer {
+  height: 50vw;
+  min-height: 500px;
+  text-align: center;
+ }
 }
