@@ -254,7 +254,7 @@ class App extends React.Component {
 
                   <p id="skill_name"> Back-end</p>
                   <p id="skill_desc"> I learnt a bit of PHP and SQL at AUT.
-                    I then learnt Firebase and Node.js on Udemy.  </p>
+                    I then learnt AWS and Node.js on my own.  </p>
                 </Col>
                 <Col xs={6} md={6}>
                   <img
@@ -572,7 +572,7 @@ class App extends React.Component {
 
                   <p id="skill_name"> Back-end</p>
                   <p id="skill_desc"> I learnt a bit of PHP and SQL at AUT.
-                  I then learnt Firebase and Node.js on Udemy.  </p>
+                  I then learnt AWS and Node.js on my own.  </p>
                 </Col>
                 <Col xs={4} md={4}>
                   <img
@@ -876,7 +876,7 @@ class App extends React.Component {
 
                   <p id="skill_name"> Back-end</p>
                   <p id="skill_desc"> I learnt a bit of PHP and SQL at AUT.
-                  I then learnt Firebase and Node.js on Udemy.  </p>
+                  I then learnt AWS and Node.js on my own.  </p>
 
                 </Col>
                 <Col xd={4} md={4}>
