@@ -276,7 +276,7 @@ class App extends React.Component {
           {/* Contact Section */}
           <div id="contact_section">
             <p id="contact_header"> My Contact Details </p>
-            <Container>
+            <Container id="contact_container">
               <Row>
                 <Col id="media_links">
                   <p id="contact_sub_header"> Find me on these platforms: </p>
@@ -326,20 +326,20 @@ class App extends React.Component {
                       </a>
                     </Col>
                   </Row>
-                  <p id="contact_sub_header"> Send me a message here: </p>
+
                   <Col md={10} id="contact_form">
                     <Form onSubmit={this.handleSubmit}>
                       <Form.Group controlId="formName">
                         <Form.Label> Name: </Form.Label>
-                        <Form.Control type="name"  onChange={this.onNameChange} />
+                        <Form.Control type="name" onChange={this.onNameChange} />
                       </Form.Group>
                       <Form.Group controlId="formEmail">
                         <Form.Label> Email: </Form.Label>
-                        <Form.Control type="email"  onChange={this.onEmailChange} />
+                        <Form.Control type="email" onChange={this.onEmailChange} />
                       </Form.Group>
                       <Form.Group controlId="formMessage">
                         <Form.Label> Message: </Form.Label>
-                        <Form.Control as="textarea" type="message" rows={3}  onChange={this.onMessageChange} />
+                        <Form.Control as="textarea" type="message" rows={3} onChange={this.onMessageChange} />
                       </Form.Group>
                       <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
                       <Button disabled={!this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
@@ -589,7 +589,7 @@ class App extends React.Component {
           {/* Contact Section */}
           <div id="contact_section">
             <p id="contact_header"> My Contact Details </p>
-            <Container>
+            <Container id="contact_container">
               <Row>
                 <Col id="media_links">
                   <p id="contact_sub_header"> Find me on these platforms: </p>
@@ -639,20 +639,21 @@ class App extends React.Component {
                       </a>
                     </Col>
                   </Row>
-                  <p id="contact_sub_header"> Send me a message here: </p>
+
                   <Col md={10} id="contact_form">
+                    <p id="contact_sub_header"> Send me a message: </p>
                     <Form onSubmit={this.handleSubmit}>
                       <Form.Group controlId="formName">
                         <Form.Label> Name: </Form.Label>
-                        <Form.Control type="name"  onChange={this.onNameChange} />
+                        <Form.Control type="name" onChange={this.onNameChange} />
                       </Form.Group>
                       <Form.Group controlId="formEmail">
                         <Form.Label> Email: </Form.Label>
-                        <Form.Control type="email"  onChange={this.onEmailChange} />
+                        <Form.Control type="email" onChange={this.onEmailChange} />
                       </Form.Group>
                       <Form.Group controlId="formMessage">
                         <Form.Label> Message: </Form.Label>
-                        <Form.Control as="textarea" type="message" rows={3}  onChange={this.onMessageChange} />
+                        <Form.Control as="textarea" type="message" rows={3} onChange={this.onMessageChange} />
                       </Form.Group>
                       <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
                       <Button disabled={!this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
@@ -903,8 +904,30 @@ class App extends React.Component {
           {/* Contact Section */}
           <div id="contact_section">
             <p id="contact_header"> My Contact Details </p>
-            <Container>
+            <Container id="contact_container">
               <Row>
+                <Col md={6}>
+                  <p id="contact_sub_header"> Send me a message: </p>
+                  <Col md={10} id="contact_form">
+                    <Form onSubmit={this.handleSubmit}>
+                      <Form.Group controlId="formName">
+                        <Form.Label> Name: </Form.Label>
+                        <Form.Control type="name" onChange={this.onNameChange} />
+                      </Form.Group>
+                      <Form.Group controlId="formEmail">
+                        <Form.Label> Email: </Form.Label>
+                        <Form.Control type="email" onChange={this.onEmailChange} />
+                      </Form.Group>
+                      <Form.Group controlId="formMessage">
+                        <Form.Label> Message: </Form.Label>
+                        <Form.Control as="textarea" type="message" rows={3} onChange={this.onMessageChange} />
+                      </Form.Group>
+                      {/* Test key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI     Real Key: 6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx*/}
+                      <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
+                      <Button disabled={!this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
+                    </Form>
+                  </Col>
+                </Col>
                 <Col md={6} id="media_links">
                   <p id="contact_sub_header"> Find me on these platforms: </p>
                   <Row>
@@ -956,28 +979,6 @@ class App extends React.Component {
                     </Col>
                     <Col md={2}></Col>
                   </Row>
-                </Col>
-                <Col md={6}>
-                  <p id="contact_sub_header"> Send me a message here: </p>
-                  <Col md={10} id="contact_form">
-                    <Form onSubmit={this.handleSubmit}>
-                      <Form.Group controlId="formName">
-                        <Form.Label> Name: </Form.Label>
-                        <Form.Control type="name"  onChange={this.onNameChange} />
-                      </Form.Group>
-                      <Form.Group controlId="formEmail">
-                        <Form.Label> Email: </Form.Label>
-                        <Form.Control type="email"  onChange={this.onEmailChange} />
-                      </Form.Group>
-                      <Form.Group controlId="formMessage">
-                        <Form.Label> Message: </Form.Label>
-                        <Form.Control as="textarea" type="message" rows={3}  onChange={this.onMessageChange} />
-                      </Form.Group>
-                      {/* Test key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI     Real Key: 6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx*/}
-                      <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
-                      <Button disabled={!this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
-                    </Form>
-                  </Col>
                 </Col>
               </Row>
             </Container>
