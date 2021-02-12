@@ -196,7 +196,9 @@ body {
 }
 
 #contact_sub_header {
- color: #0e3147;
+ color: white;
+ background-color: #0e3147;
+ width: 100%;
  font-size: 1.8em;
  font-weight: 400;
  text-align: center;
@@ -232,6 +234,7 @@ body {
  display: block;
  margin-left: auto;
  margin-right: auto;
+
 }
 
 .form-label {
@@ -285,6 +288,7 @@ body {
  background-color: #0e3147;
  height: 30vh;
  line-height: 1em;
+ min-height: 350px;
 }
 
 #footer_header {
