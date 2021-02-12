@@ -10,7 +10,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 // Images, Icons and Logos
 import Logo from './Assets/Icons/Logo_Blue.svg';
-import Logo_White from './Assets/Icons/Logo_White.svg';
+import Logo_LightBlue from './Assets/Icons/Logo_LightBlue.svg';
 import Skill_FrontEnd from './Assets/Icons/Skill_FrontEnd.svg';
 import Skill_PC from './Assets/Icons/Skill_PC.svg';
 import Skill_Java from './Assets/Icons/Skill_Java.svg';
@@ -331,15 +331,15 @@ class App extends React.Component {
                     <Form onSubmit={this.handleSubmit}>
                       <Form.Group controlId="formName">
                         <Form.Label> Name: </Form.Label>
-                        <Form.Control type="name" placeholder="Enter your name" onChange={this.onNameChange} />
+                        <Form.Control type="name"  onChange={this.onNameChange} />
                       </Form.Group>
                       <Form.Group controlId="formEmail">
                         <Form.Label> Email: </Form.Label>
-                        <Form.Control type="email" placeholder="Enter your email" onChange={this.onEmailChange} />
+                        <Form.Control type="email"  onChange={this.onEmailChange} />
                       </Form.Group>
                       <Form.Group controlId="formMessage">
                         <Form.Label> Message: </Form.Label>
-                        <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" onChange={this.onMessageChange} />
+                        <Form.Control as="textarea" type="message" rows={3}  onChange={this.onMessageChange} />
                       </Form.Group>
                       <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
                       <Button disabled={!this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
@@ -401,43 +401,38 @@ class App extends React.Component {
 
               </Row>
             </Container>
-            {/* Footer Section */}
-            <div id="footer">
-
-              <Container>
-                <Row>
-                  <img
-                    src={Logo_White}
-                    height="50px"
-                    width="auto"
-                    alt="Khoa's Logo"
-                    className="d-inline-block align-top"
-                    id="footer_logo"
-                  />
-                </Row>
-                <Row>
-                  <Col md={4}>
-                    <p id="footer_header"> Credits </p>
-                    <p><a id="footer_desc" > Minimalist Mountains from Wallpaper Access</a></p>
-                    <p><a id="footer_desc" href="https://www.vecteezy.com/vector-art/127886-seabed-free-vector" > Seabed Illustration by visionheldup</a></p>
-                  </Col>
-
-                  <Col md={4}>
-                    <p id="footer_header"> For employers </p>
-                    <p><a id="footer_desc" href="https://drive.google.com/file/d/1yNTECSnNEvkXR_jdmG_gz2bS8f3zuyxg/view?usp=sharing">  My CV/Resume</a></p>
-                    <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
-                  </Col>
-
-                  <Col md={4}>
-                    <p id="footer_header">  And finally...</p>
-                    <p id="footer_desc"> Thank you for visiting my website. Have a nice rest of your day!</p>
-                  </Col>
-                </Row>
-
-              </Container>
-            </div>
           </div>
+          {/* Footer Section */}
+          <div id="footer">
 
+            <Container>
+              <Row>
+                <Col md={4}>
+                  <p id="footer_header">  Navigation</p>
+                  <p><Link to="skills_section" spy={true} smooth={true} id="footer_desc"> My Skills </Link> </p>
+                  <p><Link to="contact_section" spy={true} smooth={true} id="footer_desc"> Contact Me </Link> </p>
+                  <p><Link to="projects_section" spy={true} smooth={true} id="footer_desc"> My Projects </Link> </p>
+                </Col>
+
+                <Col md={4}>
+                  <p id="footer_header"> Documents </p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1yNTECSnNEvkXR_jdmG_gz2bS8f3zuyxg/view?usp=sharing">  My CV/Resume</a></p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
+                </Col>
+
+                <Col md={4}>
+                  <p id="footer_header"> Credits </p>
+                  <p><a id="footer_desc" > Minimalist Mountains from Wallpaper Access</a></p>
+                  <p><a id="footer_desc" href="https://www.vecteezy.com/vector-art/127886-seabed-free-vector" > Seabed Illustration by visionheldup</a></p>
+
+                </Col>
+              </Row>
+              <Row>
+                <p id="footer_disclaimer"> This website was made using ReactJS, Bootstrap and hosted using AWS Amplify. </p>
+              </Row>
+
+            </Container>
+          </div>
 
 
         </div>
@@ -649,15 +644,15 @@ class App extends React.Component {
                     <Form onSubmit={this.handleSubmit}>
                       <Form.Group controlId="formName">
                         <Form.Label> Name: </Form.Label>
-                        <Form.Control type="name" placeholder="Enter your name" onChange={this.onNameChange} />
+                        <Form.Control type="name"  onChange={this.onNameChange} />
                       </Form.Group>
                       <Form.Group controlId="formEmail">
                         <Form.Label> Email: </Form.Label>
-                        <Form.Control type="email" placeholder="Enter your email" onChange={this.onEmailChange} />
+                        <Form.Control type="email"  onChange={this.onEmailChange} />
                       </Form.Group>
                       <Form.Group controlId="formMessage">
                         <Form.Label> Message: </Form.Label>
-                        <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" onChange={this.onMessageChange} />
+                        <Form.Control as="textarea" type="message" rows={3}  onChange={this.onMessageChange} />
                       </Form.Group>
                       <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
                       <Button disabled={!this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
@@ -722,44 +717,40 @@ class App extends React.Component {
 
               </Row>
             </Container>
-            {/* Footer Section */}
-            <div id="footer">
 
-              <Container>
-                <Row>
-                  <img
-                    src={Logo_White}
-                    height="50px"
-                    width="auto"
-                    alt="Khoa's Logo"
-                    className="d-inline-block align-top"
-                    id="footer_logo"
-                  />
-                </Row>
-                <Row>
-                  <Col md={4}>
-                    <p id="footer_header"> Credits </p>
-                    <p><a id="footer_desc" > Minimalist Mountains from Wallpaper Access</a></p>
-                    <p><a id="footer_desc" href="https://www.vecteezy.com/vector-art/127886-seabed-free-vector"> Seabed Illustration by visionheldup</a></p>
-                  </Col>
-
-                  <Col md={4}>
-                    <p id="footer_header"> For employers </p>
-                    <p><a id="footer_desc" href="https://drive.google.com/file/d/1yNTECSnNEvkXR_jdmG_gz2bS8f3zuyxg/view?usp=sharing">  My CV/Resume</a></p>
-                    <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
-                  </Col>
-
-                  <Col md={4}>
-                    <p id="footer_header">  And finally...</p>
-                    <p id="footer_desc"> Thank you for visiting my website. Have a nice rest of your day!</p>
-                  </Col>
-                </Row>
-
-              </Container>
-            </div>
           </div>
 
+          {/* Footer Section */}
+          <div id="footer">
 
+            <Container>
+
+              <Row>
+                <Col md={4}>
+                  <p id="footer_header">  Navigation</p>
+                  <p><Link to="skills_section" spy={true} smooth={true} id="footer_desc"> My Skills </Link> </p>
+                  <p><Link to="contact_section" spy={true} smooth={true} id="footer_desc"> Contact Me </Link> </p>
+                  <p><Link to="projects_section" spy={true} smooth={true} id="footer_desc"> My Projects </Link> </p>
+                </Col>
+
+                <Col md={4}>
+                  <p id="footer_header"> Documents </p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1yNTECSnNEvkXR_jdmG_gz2bS8f3zuyxg/view?usp=sharing">  My CV/Resume</a></p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
+                </Col>
+
+                <Col md={4}>
+                  <p id="footer_header"> Credits </p>
+                  <p><a id="footer_desc" > Minimalist Mountains from Wallpaper Access</a></p>
+                  <p><a id="footer_desc" href="https://www.vecteezy.com/vector-art/127886-seabed-free-vector"> Seabed Illustration by visionheldup</a></p>
+
+                </Col>
+              </Row>
+              <Row>
+                <p id="footer_disclaimer"> This website was made using ReactJS, Bootstrap and hosted using AWS Amplify. </p>
+              </Row>
+            </Container>
+          </div>
 
         </div>
 
@@ -972,15 +963,15 @@ class App extends React.Component {
                     <Form onSubmit={this.handleSubmit}>
                       <Form.Group controlId="formName">
                         <Form.Label> Name: </Form.Label>
-                        <Form.Control type="name" placeholder="Enter your name" onChange={this.onNameChange} />
+                        <Form.Control type="name"  onChange={this.onNameChange} />
                       </Form.Group>
                       <Form.Group controlId="formEmail">
                         <Form.Label> Email: </Form.Label>
-                        <Form.Control type="email" placeholder="Enter your email" onChange={this.onEmailChange} />
+                        <Form.Control type="email"  onChange={this.onEmailChange} />
                       </Form.Group>
                       <Form.Group controlId="formMessage">
                         <Form.Label> Message: </Form.Label>
-                        <Form.Control as="textarea" type="message" rows={3} placeholder="Enter your message" onChange={this.onMessageChange} />
+                        <Form.Control as="textarea" type="message" rows={3}  onChange={this.onMessageChange} />
                       </Form.Group>
                       {/* Test key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI     Real Key: 6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx*/}
                       <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
@@ -1052,44 +1043,39 @@ class App extends React.Component {
                 </Col>
               </Row>
             </Container>
-            {/* Footer Section */}
-            <div id="footer">
 
-              <Container>
-                <Row>
-                  <img
-                    src={Logo_White}
-                    height="50px"
-                    width="auto"
-                    alt="Khoa's Logo"
-                    className="d-inline-block align-top"
-                    id="footer_logo"
-                  />
-                </Row>
-                <Row>
-                  <Col md={4}>
-                    <p id="footer_header"> Credits </p>
-                    <p><a id="footer_desc" > Minimalist Mountains from Wallpaper Access</a></p>
-                    <p><a id="footer_desc" href="https://www.vecteezy.com/vector-art/127886-seabed-free-vector"> Seabed Illustration by visionheldup</a></p>
-                  </Col>
-
-                  <Col md={4}>
-                    <p id="footer_header"> For employers </p>
-                    <p><a id="footer_desc" href="https://drive.google.com/file/d/1yNTECSnNEvkXR_jdmG_gz2bS8f3zuyxg/view?usp=sharing">  My CV/Resume</a></p>
-                    <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
-                  </Col>
-
-                  <Col md={4}>
-                    <p id="footer_header">  And finally...</p>
-                    <p id="footer_desc"> Thank you for visiting my website. Have a nice rest of your day!</p>
-                  </Col>
-                </Row>
-
-              </Container>
-            </div>
           </div>
 
+          {/* Footer Section */}
+          <div id="footer">
 
+            <Container>
+
+              <Row>
+                <Col md={4}>
+                  <p id="footer_header">  Navigation</p>
+                  <p><Link to="skills_section" spy={true} smooth={true} id="footer_desc"> My Skills </Link> </p>
+                  <p><Link to="contact_section" spy={true} smooth={true} id="footer_desc"> Contact Me </Link> </p>
+                  <p><Link to="projects_section" spy={true} smooth={true} id="footer_desc"> My Projects </Link> </p>
+                </Col>
+
+                <Col md={4}>
+                  <p id="footer_header"> Documents </p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1yNTECSnNEvkXR_jdmG_gz2bS8f3zuyxg/view?usp=sharing">  My CV/Resume</a></p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
+                </Col>
+
+                <Col md={4}>
+                  <p id="footer_header"> Credits </p>
+                  <p><a id="footer_desc" > Minimalist Mountains from Wallpaper Access</a></p>
+                  <p><a id="footer_desc" href="https://www.vecteezy.com/vector-art/127886-seabed-free-vector"> Seabed Illustration by visionheldup</a></p>
+                </Col>
+              </Row>
+              <Row>
+                <p id="footer_disclaimer"> This website was made using ReactJS, Bootstrap and hosted using AWS Amplify. </p>
+              </Row>
+            </Container>
+          </div>
         </div>
 
       );

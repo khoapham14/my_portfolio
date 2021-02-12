@@ -8,7 +8,25 @@ body {
 }
 
 .btn-outline-light {
+ background-color: #0e3147;
+ color: white;
+ border-color: #0e3147;
+}
+
+.card {
+ background-color: #f8fcfd;
+ border: none;
+}
+
+.btn-primary:hover {
+ background-color: lightskyblue;
  color: #0e3147;
+ border-color: lightskyblue;
+}
+
+.btn-primary {
+ background-color: #0e3147;
+ color: white;
  border-color: #0e3147;
 }
 
@@ -134,7 +152,8 @@ body {
 
 /* Contact Section */
 #contact_section {
- background-color: #add0ec;
+ background-color: ;
+ background-image: linear-gradient(#add0ec, #a1dae5);
  height: 100vh;
  width: auto;
  min-height: 800px;
@@ -199,7 +218,7 @@ body {
 
 /* Projects Section */
 #projects_section {
- background-image: url("Assets/underwater_modified.png");
+ background-image: url("Assets/underwater_modified.svg");
  min-height: 1600px;
  width: auto;
  background-repeat: no-repeat;
@@ -239,27 +258,33 @@ body {
 
 /* Footer Section */
 #footer {
- height: 15em;
- text-align: center;
-}
-
-#footer_logo {
- display: block;
- margin-left: auto;
- margin-right: auto;
- margin-top: 2%;
+ background-color: #0e3147;
+ height: 30vh;
+ line-height: 1em;
 }
 
 #footer_header {
- margin-top: 3%;
- color: #ffffff;
- font-size: 1.5em;
+ padding-top: 15%;
+ color: #add0ec;
+ font-size: 1.3em;
  font-weight: 700;
+ padding-bottom: 3%;
 }
 
 #footer_desc {
- color: #ffffff;
+ color: #add0ec;
  font-size: 1em;
+ font-weight: 300;
+}
+
+#footer_disclaimer {
+ margin-top: 5%;
+ color: #add0ec;
+ font-size: 1em;
+ font-weight: 300;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 @media only screen and (max-width: 1000px) {
