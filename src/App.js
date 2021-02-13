@@ -326,7 +326,7 @@ class App extends React.Component {
                       </a>
                     </Col>
                   </Row>
-
+                  <p id="contact_sub_header"> Send me a message: </p>
                   <Col md={10} id="contact_form">
                     <Form onSubmit={this.handleSubmit}>
                       <Form.Group controlId="formName">
@@ -639,9 +639,8 @@ class App extends React.Component {
                       </a>
                     </Col>
                   </Row>
-
+                  <p id="contact_sub_header"> Send me a message: </p>
                   <Col md={10} id="contact_form">
-                    <p id="contact_sub_header"> Send me a message: </p>
                     <Form onSubmit={this.handleSubmit}>
                       <Form.Group controlId="formName">
                         <Form.Label> Name: </Form.Label>
