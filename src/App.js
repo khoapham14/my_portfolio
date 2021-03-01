@@ -10,7 +10,6 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 // Images, Icons and Logos
 import Logo from './Assets/Icons/Logo_Blue.svg';
-import Logo_LightBlue from './Assets/Icons/Logo_LightBlue.svg';
 import Skill_FrontEnd from './Assets/Icons/Skill_FrontEnd.svg';
 import Skill_PC from './Assets/Icons/Skill_PC.svg';
 import Skill_Java from './Assets/Icons/Skill_Java.svg';
@@ -26,6 +25,8 @@ import WAU_Card from './Assets/Projects/We_Are_Us_Card.png';
 import Simp_Card from './Assets/Projects/SimpliCT.png';
 import Cab_Card from './Assets/Projects/Cab_Booking.png';
 import SEER_Card from './Assets/Projects/SEER.png';
+import DHF_Card from './Assets/Projects/DHF_Card.png';
+import Nothing_Card from './Assets/Projects/Nothing_Project.png';
 
 
 class App extends React.Component {
@@ -341,7 +342,11 @@ class App extends React.Component {
                         <Form.Label> Message: </Form.Label>
                         <Form.Control as="textarea" type="message" rows={3} onChange={this.onMessageChange} />
                       </Form.Group>
-                      <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
+                      <div id="captcha-box" >
+                        {/* Test key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI     Real Key: 6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx*/}
+                        <ReCAPTCHA
+                          sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
+                      </div>
                       <Button disabled={!this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
                     </Form>
                   </Col>
@@ -399,6 +404,18 @@ class App extends React.Component {
                   </Card.Body>
                 </Card>
 
+                <Card style={{ width: '65%' }}>
+                  <Card.Img variant="top" src={Nothing_Card} width="100%" height="auto" />
+                  <Card.Body>
+                    <Card.Title> Nothing </Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">  MERN stack, React Router, Redux, Bootstrap,
+                      Stripe, Heroku, Firebase Authentication </Card.Subtitle>
+                    <Card.Text> An online store that sells nothing.
+                    </Card.Text>
+                    <Button variant="primary" id="project_button" href="https://shielded-inlet-26000.herokuapp.com/"> See Project </Button>
+                  </Card.Body>
+                </Card>
+
               </Row>
             </Container>
           </div>
@@ -416,13 +433,13 @@ class App extends React.Component {
 
                 <Col md={4}>
                   <p id="footer_header"> Documents </p>
-                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1yNTECSnNEvkXR_jdmG_gz2bS8f3zuyxg/view?usp=sharing">  My CV/Resume</a></p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1TVPTmprnrHuDSLWJPGeNBCYW1z1UNmx7/view?usp=sharing">  My CV/Resume</a></p>
                   <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
                 </Col>
 
                 <Col md={4}>
                   <p id="footer_header"> Credits </p>
-                  <p><a id="footer_desc" > Minimalist Mountains from Wallpaper Access</a></p>
+                  <p><a id="footer_desc" href="https://wallpaperaccess.com/minimal-mountain"> Minimalist Mountains from Wallpaper Access</a></p>
                   <p><a id="footer_desc" href="https://www.vecteezy.com/vector-art/127886-seabed-free-vector" > Seabed Illustration by visionheldup</a></p>
 
                 </Col>
@@ -654,7 +671,10 @@ class App extends React.Component {
                         <Form.Label> Message: </Form.Label>
                         <Form.Control as="textarea" type="message" rows={3} onChange={this.onMessageChange} />
                       </Form.Group>
-                      <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
+                      <div id="captcha-box" >
+                        {/* Test key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI     Real Key: 6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx*/}
+                        <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
+                      </div>
                       <Button disabled={!this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
                     </Form>
                   </Col>
@@ -690,9 +710,6 @@ class App extends React.Component {
                   </Card.Body>
                 </Card>
 
-
-
-
                 <Card style={{ width: '65%' }}>
                   <Card.Img variant="top" src={Cab_Card} width="100%" height="auto" />
                   <Card.Body>
@@ -715,6 +732,21 @@ class App extends React.Component {
                   </Card.Body>
                 </Card>
 
+
+
+                <Card style={{ width: '65%' }}>
+                  <Card.Img variant="top" src={Nothing_Card} width="100%" height="auto" />
+                  <Card.Body>
+                    <Card.Title> Nothing </Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">  MERN stack, React Router, Redux, Bootstrap,
+                      Stripe, Heroku, Firebase Authentication </Card.Subtitle>
+                    <Card.Text> An online store that sells nothing.
+                    </Card.Text>
+                    <Button variant="primary" id="project_button" href="https://shielded-inlet-26000.herokuapp.com/"> See Project </Button>
+                  </Card.Body>
+                </Card>
+
+
               </Row>
             </Container>
 
@@ -735,13 +767,13 @@ class App extends React.Component {
 
                 <Col md={4}>
                   <p id="footer_header"> Documents </p>
-                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1yNTECSnNEvkXR_jdmG_gz2bS8f3zuyxg/view?usp=sharing">  My CV/Resume</a></p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1TVPTmprnrHuDSLWJPGeNBCYW1z1UNmx7/view?usp=sharing">  My CV/Resume</a></p>
                   <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
                 </Col>
 
                 <Col md={4}>
                   <p id="footer_header"> Credits </p>
-                  <p><a id="footer_desc" > Minimalist Mountains from Wallpaper Access</a></p>
+                  <p><a id="footer_desc" href="https://wallpaperaccess.com/minimal-mountain" > Minimalist Mountains from Wallpaper Access</a></p>
                   <p><a id="footer_desc" href="https://www.vecteezy.com/vector-art/127886-seabed-free-vector"> Seabed Illustration by visionheldup</a></p>
 
                 </Col>
@@ -921,8 +953,10 @@ class App extends React.Component {
                         <Form.Label> Message: </Form.Label>
                         <Form.Control as="textarea" type="message" rows={3} onChange={this.onMessageChange} />
                       </Form.Group>
-                      {/* Test key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI     Real Key: 6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx*/}
-                      <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
+                      <div id="captcha-box" >
+                        {/* Test key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI     Real Key: 6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx*/}
+                        <ReCAPTCHA sitekey="6LffwDYaAAAAAH-ew6NnSLc5jwTFGriTGVeQ2yzx" onChange={this.onChange} />
+                      </div>
                       <Button disabled={!this.state.captcha} variant="outline-light" type="submit"> Submit </Button>
                     </Form>
                   </Col>
@@ -1042,6 +1076,24 @@ class App extends React.Component {
                   </Card>
                 </Col>
               </Row>
+
+              <Row>
+                <Col md={6}>
+                  <Card style={{ width: '65%' }}>
+                    <Card.Img variant="top" src={Nothing_Card} width="100%" height="auto" />
+                    <Card.Body>
+                      <Card.Title> Nothing </Card.Title>
+                      <Card.Subtitle className="mb-2 text-muted">  MERN stack, React Router, Redux, Bootstrap,
+                      Stripe, Heroku, Firebase Authentication </Card.Subtitle>
+                      <Card.Text> An online store that sells nothing.
+                    </Card.Text>
+                      <Button variant="primary" id="project_button" href="https://shielded-inlet-26000.herokuapp.com/"> See Project </Button>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col md={6}>
+                </Col>
+              </Row>
             </Container>
 
           </div>
@@ -1061,13 +1113,13 @@ class App extends React.Component {
 
                 <Col md={4}>
                   <p id="footer_header"> Documents </p>
-                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1yNTECSnNEvkXR_jdmG_gz2bS8f3zuyxg/view?usp=sharing">  My CV/Resume</a></p>
+                  <p><a id="footer_desc" href="https://drive.google.com/file/d/1TVPTmprnrHuDSLWJPGeNBCYW1z1UNmx7/view?usp=sharing">  My CV/Resume</a></p>
                   <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
                 </Col>
 
                 <Col md={4}>
                   <p id="footer_header"> Credits </p>
-                  <p><a id="footer_desc" > Minimalist Mountains from Wallpaper Access</a></p>
+                  <p><a id="footer_desc" href="https://wallpaperaccess.com/minimal-mountain" > Minimalist Mountains from Wallpaper Access</a></p>
                   <p><a id="footer_desc" href="https://www.vecteezy.com/vector-art/127886-seabed-free-vector"> Seabed Illustration by visionheldup</a></p>
                 </Col>
               </Row>

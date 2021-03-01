@@ -315,6 +315,8 @@ body {
  margin-right: auto;
 }
 
+
+
 @media only screen and (max-width: 1000px) {
  body {
   font-size: 14px;
@@ -357,4 +359,13 @@ body {
   min-height: 650px;
   text-align: center;
  }
+
+ #captcha-box{
+  transform: scale(0.8);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+}
+
+
