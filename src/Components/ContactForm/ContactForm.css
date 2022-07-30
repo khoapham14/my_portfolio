@@ -1,0 +1,25 @@
+.button{
+  background-color: #0E3147;
+  color: white;
+  font-weight:bold;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 10px;
+  border: 0px;
+}
+
+.button:hover{
+  background-color: #add0ec;
+}
+
+
+.contact_form{
+  padding: 3em;
+  background-color: white;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  border-radius: 0 15px 15px 0;
+}

@@ -3,114 +3,22 @@ html {
  scroll-behavior: smooth;
 }
 
+.col{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 body {
  font-size: 16px;
  background-attachment: fixed;
 }
 
-.btn-outline-light {
- background-color: #0e3147;
- color: white;
- border-color: #0e3147;
-}
 
 .card {
- background-color: #f8fcfd;
- border: none;
-}
+  background-color: #f8fcfd;
+  border: none;
+ }
 
-.btn-primary:hover {
- background-color: lightskyblue;
- color: #0e3147;
- border-color: lightskyblue;
-}
-
-.btn-primary {
- background-color: #0e3147;
- color: white;
- border-color: #0e3147;
-}
-
-/* Intro & Navbar */
-#intro {
- background-image: url("Assets/homepage-bg.jpg");
- height: 100vh;
- min-height: 720px;
- width: auto;
- background-repeat: no-repeat;
- background-size: cover;
- background-position: center;
- margin-top: 0;
- margin-left: auto;
- display: block;
- margin-right: auto;
-}
-
-.navbar-brand {
- display: flex;
- align-items: center;
-}
-
-#nav-link {
- color: #0e3147 !important;
- font-size: 1.5em;
- font-weight: 400;
- text-decoration: none;
- background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-  linear-gradient(#0e3147, #0e3147);
- background-size: 100% 2px, 0 2px;
- background-position: 100% 100%, 0 100%;
- background-repeat: no-repeat;
- transition: background-size 0.5s linear;
- margin-left: 1em;
-}
-
-#nav-link:hover {
- background-size: 0 2px, 100% 2px;
- cursor: pointer;
-}
-
-.navbar .navbar-toggler-icon {
- background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(14, 49, 71, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.navbar .navbar-toggler {
- border-color: transparent;
-}
-
-#welcome {
- padding-top: 17%;
- text-align: center;
-}
-
-#divider {
- border-color: #0e3147;
-}
-
-#header {
- color: #0e3147;
- font-size: 4em;
- font-weight: 500;
-}
-
-#description {
- color: #0e3147;
- font-size: 1.7em;
- font-weight: 300;
-}
-
-#cta_button {
- font-size: 1.5em;
- font-weight: 300;
- margin-top: 1em;
-}
-
-#arrow {
- display: block;
- margin-left: auto;
- margin-right: auto;
- margin-top: 12%;
-}
 
 /* Skills Section */
 #skills_section {
@@ -150,169 +58,6 @@ body {
  margin-bottom: 10%;
  text-align: left;
  font-weight: 300;
-}
-
-/* Contact Section */
-#contact_section {
- background-image: linear-gradient(#add0ec, #a1dae5);
- height: 100vh;
- width: auto;
- min-height: 800px;
- background-repeat: no-repeat;
- background-size: cover;
- background-position: center;
- padding-top: 5vh;
- padding-bottom: 5vh;
-}
-
-#contact_container:before {
- content: "";
- background: inherit;
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
- filter: blur(10px);
-}
-
-#contact_container {
- background: inherit;
- padding: 3% 2% 3% 2%;
- box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
- border-radius: 5px;
- position: relative;
- z-index: 1;
-}
-
-#contact_header {
- color: #0e3147;
- text-align: center;
- font-size: 3em;
- font-weight: 700;
- padding-top: 3%;
- padding-bottom: 3%;
-}
-
-#contact_sub_header {
- color: white;
- background-color: #0e3147;
- width: 100%;
- font-size: 1.8em;
- font-weight: 400;
- text-align: center;
- margin-bottom: 2em;
- margin-top: 1em;
-}
-
-#contact_icons_container {
- display: block;
- margin-left: auto;
- margin-right: auto;
-}
-
-.contact_icons {
- margin-bottom: 3em;
- display: block;
- margin-left: auto;
- margin-right: auto;
-}
-
-#contact_text {
- color: #0e3147;
- font-size: 1.3em;
- font-weight: 300;
- margin-bottom: 2.8em;
-}
-
-#media_links{
-  border-left: 2px solid #0e3147;
-}
-
-#contact_form {
- display: block;
- margin-left: auto;
- margin-right: auto;
-
-}
-
-.form-label {
- color: #0e3147;
- font-size: 1.3em;
- font-weight: 600;
-}
-
-/* Projects Section */
-#projects_section {
- background-image: url("Assets/underwater_modified.svg");
- min-height: 1600px;
- width: auto;
- background-repeat: no-repeat;
- background-size: cover;
- background-position: center;
- padding-top: 10vh;
- background-color: #f8f8f8;
-}
-
-#projects_header {
- color: #0e3147;
- text-align: center;
- font-size: 3em;
- font-weight: 700;
- padding-top: 3%;
- padding-bottom: 3%;
-}
-
-.card {
- display: block;
- margin-left: auto;
- margin-right: auto;
- margin-bottom: 5%;
-}
-
-.card-title {
- color: #0e3147;
-}
-
-.card-subtitle {
- color: #3d6387;
-}
-
-.card-text {
- color: #6c90c0;
-}
-
-/* Footer Section */
-#footer {
- background-color: #0e3147;
- height: 30vh;
- line-height: 1em;
- min-height: 350px;
-}
-
-#footer_header {
- padding-top: 15%;
- color: #add0ec;
- font-size: 1.3em;
- font-weight: 700;
- padding-bottom: 3%;
-}
-
-#footer_desc {
- color: #add0ec;
- font-size: 1em;
- font-weight: 300;
-}
-
-#footer_disclaimer {
- margin-top: 5%;
- color: #add0ec;
- font-size: 1em;
- font-weight: 300;
- display: block;
- margin-left: auto;
- margin-right: auto;
 }
 
 

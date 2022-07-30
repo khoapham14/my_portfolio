@@ -1,0 +1,39 @@
+/* Skills Section */
+#skills_section {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  text-align: center;
+  background-image: linear-gradient(#add0ec, #a1dae5);
+ }
+ 
+ #skills_header {
+  color: #0e3147;
+  font-size: 3em;
+  font-weight: 700;
+ }
+ 
+ #skills_sub_header {
+  color: #0e3147;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 0;
+ }
+ 
+ #skills {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+ }
+ 
+ #skill_name {
+  color: #0e3147;
+  font-size: 1.7em;
+  font-weight: 500;
+ }
+ 
+ #skill_desc {
+  color: #0e3147;
+  font-size: 1.3em;
+  margin-bottom: 10%;
+  text-align: left;
+  font-weight: 300;
+ }

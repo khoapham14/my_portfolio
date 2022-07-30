@@ -1,0 +1,80 @@
+/* Contact Section */
+#contact_section {
+  background-image: url("../../Assets/underwater_modified.svg");
+  height: 100vh;
+  width: auto;
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+
+#contact_header {
+  color: #0e3147;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#contact_form_box {
+  color: white;
+  background-color: #0e3147;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 3em;
+  border-radius: 15px 0 0 15px;
+}
+
+#contact_form_header{
+  color: white;
+  font-weight:bold;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px white solid;
+}
+
+#contact_form_subtext {
+  color: white;
+  font-size: 1em;
+  text-align: left;
+}
+
+#contact_icons_container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact_icons {
+  margin-bottom: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact_text {
+  color: #0e3147;
+  font-size: 1.3em;
+  font-weight: 300;
+  margin-bottom: 2.8em;
+}
+
+#media_links {
+
+}
+
+#contact_form {
+
+}
+
+.form-label {
+  color: #0e3147;
+  font-size: 1.3em;
+  font-weight: 600;
+}

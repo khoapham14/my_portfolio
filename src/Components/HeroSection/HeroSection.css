@@ -1,0 +1,66 @@
+/* Intro & Navbar */
+#intro {
+  background-image: url("../../Assets/homepage-bg.jpg");
+  height: 100vh;
+  min-height: 720px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
+}
+
+.btn-primary:hover {
+  background-color: lightskyblue;
+  color: #0e3147;
+  border-color: lightskyblue;
+}
+
+.btn-primary {
+  background-color: #0e3147;
+  color: white;
+  border-color: #0e3147;
+}
+
+.btn-outline-light {
+  background-color: #0e3147;
+  color: white;
+  border-color: #0e3147;
+}
+
+#welcome {
+  padding-top: 17%;
+  text-align: center;
+}
+
+#divider {
+  border-color: #0e3147;
+}
+
+#header {
+  color: #0e3147;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+#description {
+  color: #0e3147;
+  font-size: 1.7em;
+  font-weight: 300;
+}
+
+#cta_button {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 1em;
+}
+
+#arrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12%;
+}
