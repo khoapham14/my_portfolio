@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.73148aa1.chunk.css",
+    "main.js": "/my_portfolio/static/js/main.251a41c0.chunk.js",
+    "main.js.map": "/my_portfolio/static/js/main.251a41c0.chunk.js.map",
+    "runtime-main.js": "/my_portfolio/static/js/runtime-main.dd45ca60.js",
+    "runtime-main.js.map": "/my_portfolio/static/js/runtime-main.dd45ca60.js.map",
+    "static/js/2.26be32b4.chunk.js": "/my_portfolio/static/js/2.26be32b4.chunk.js",
+    "static/js/2.26be32b4.chunk.js.map": "/my_portfolio/static/js/2.26be32b4.chunk.js.map",
+    "static/js/3.71f913c2.chunk.js": "/my_portfolio/static/js/3.71f913c2.chunk.js",
+    "static/js/3.71f913c2.chunk.js.map": "/my_portfolio/static/js/3.71f913c2.chunk.js.map",
+    "index.html": "/my_portfolio/index.html",
+    "static/css/main.73148aa1.chunk.css.map": "/my_portfolio/static/css/main.73148aa1.chunk.css.map",
+    "static/js/2.26be32b4.chunk.js.LICENSE.txt": "/my_portfolio/static/js/2.26be32b4.chunk.js.LICENSE.txt",
+    "static/media/Cab_Booking.cb2ea30d.png": "/my_portfolio/static/media/Cab_Booking.cb2ea30d.png",
+    "static/media/Logo_Blue.bfb01d14.svg": "/my_portfolio/static/media/Logo_Blue.bfb01d14.svg",
+    "static/media/SEER.8833821b.png": "/my_portfolio/static/media/SEER.8833821b.png",
+    "static/media/SimpliCT.2857a4d2.png": "/my_portfolio/static/media/SimpliCT.2857a4d2.png",
+    "static/media/Skill_BackEnd.bdefbfd4.svg": "/my_portfolio/static/media/Skill_BackEnd.bdefbfd4.svg",
+    "static/media/Skill_C.c5347c74.svg": "/my_portfolio/static/media/Skill_C.c5347c74.svg",
+    "static/media/Skill_Comms.c02947fb.svg": "/my_portfolio/static/media/Skill_Comms.c02947fb.svg",
+    "static/media/Skill_FrontEnd.8b7626ff.svg": "/my_portfolio/static/media/Skill_FrontEnd.8b7626ff.svg",
+    "static/media/Skill_Java.f672268d.svg": "/my_portfolio/static/media/Skill_Java.f672268d.svg",
+    "static/media/Skill_PC.d5260e91.svg": "/my_portfolio/static/media/Skill_PC.d5260e91.svg",
+    "static/media/We_Are_Us_Card.8fbbe3ce.png": "/my_portfolio/static/media/We_Are_Us_Card.8fbbe3ce.png",
+    "static/media/HeroSection.css": "/my_portfolio/static/media/main-background.4ebadb41.svg",
+    "static/media/ContactSection.css": "/my_portfolio/static/media/underwater-background.036153b2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd45ca60.js",
+    "static/js/2.26be32b4.chunk.js",
+    "static/css/main.73148aa1.chunk.css",
+    "static/js/main.251a41c0.chunk.js"
+  ]
+}
