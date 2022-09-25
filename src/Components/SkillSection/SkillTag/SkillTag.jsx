@@ -1,8 +1,9 @@
+import './SkillTag.css';
 
 const SkillTag = (props) => {
     return(
         <div className="skillTag">
-            {props.skillText}
+            {props.skillTitle}
         </div>
     );
 }

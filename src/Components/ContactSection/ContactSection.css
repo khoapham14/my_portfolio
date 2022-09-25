@@ -1,16 +1,27 @@
 /* Contact Section */
 #contact_section {
-  background-image: url("../../Assets/underwater_modified.svg");
-  height: 100vh;
+  background-image: url("../../Assets/underwater-background.svg");
+  height: auto;
   width: auto;
-  min-height: 800px;
+  min-height: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 2rem;
+  padding-bottom: 12%;
 }
 
+#contact_icons {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0.3rem;
+}
+
+#contact_icons_container{
+  margin-top: 4rem;
+}
 
 #contact_header {
   color: #0e3147;
@@ -28,7 +39,8 @@
   height: 100%;
   text-align: left;
   padding: 3em;
-  border-radius: 15px 0 0 15px;
+  margin-right: 15px;
+  border-radius: 15px;
 }
 
 #contact_form_header{

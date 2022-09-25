@@ -9,8 +9,11 @@ html {
 }
 
 body {
- font-size: 16px;
- background-attachment: fixed;
+ font-size: 18px;
+}
+
+body > iframe {
+  pointer-events: none;
 }
 
 
@@ -20,51 +23,9 @@ body {
  }
 
 
-/* Skills Section */
-#skills_section {
- padding-top: 5vh;
- padding-bottom: 5vh;
- text-align: center;
- background-color: #add0ec;
-}
-
-#skills_header {
- color: #0e3147;
- font-size: 3em;
- font-weight: 700;
-}
-
-#skills_sub_header {
- color: #0e3147;
- font-size: 2em;
- font-weight: 400;
- line-height: 0;
-}
-
-#skills {
- padding-top: 5vh;
- padding-bottom: 5vh;
-}
-
-#skill_name {
- color: #0e3147;
- font-size: 1.7em;
- font-weight: 500;
-}
-
-#skill_desc {
- color: #0e3147;
- font-size: 1.3em;
- margin-bottom: 10%;
- text-align: left;
- font-weight: 300;
-}
-
-
-
 @media only screen and (max-width: 1000px) {
  body {
-  font-size: 14px;
+  font-size: 16px;
  }
 
  .navbar .navbar-collapse {
@@ -72,45 +33,12 @@ body {
   text-align: center;
  }
 
- #contact_section {
-  height: 150vh;
-  width: auto;
-  min-height: 720px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 5vh;
- }
-
- #media_links {
-  border-left: 0px;
-  padding-bottom: 5%;
- }
-
- #footer {
-  height: 10em;
-  min-height: 650px;
-  text-align: center;
- }
 }
 
 @media only screen and (max-width: 770px) {
  body {
   font-size: 12px;
  }
-
- #footer {
-  height: 50vw;
-  min-height: 650px;
-  text-align: center;
- }
-
- #captcha-box{
-  transform: scale(0.8);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 }
 
 

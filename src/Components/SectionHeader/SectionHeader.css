@@ -1,0 +1,28 @@
+.bar{
+  background-color: #0e3147;
+  height: 4px;
+  border-radius: 5px;
+  width: 3rem;
+}
+
+.sectionTitle{
+  text-align:left;
+  justify-items:start;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0e3147;
+}
+
+.sectionDescription{
+  color: #246C99;
+  text-align: left;
+}
+
+.sectionContainer{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100%;
+  /* justify-content: space-between; */
+  align-items: baseline;
+  margin-bottom: 2rem;
+}

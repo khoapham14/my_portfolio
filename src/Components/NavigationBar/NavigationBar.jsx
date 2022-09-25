@@ -1,6 +1,7 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import Logo from '../../Assets/Icons/Logo_Blue.svg';
+import './NavigationBar.css';
 
 const NavigationBar = (props) => {
   return (
@@ -19,9 +20,9 @@ const NavigationBar = (props) => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" className="justify-content-end" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav className="ml-auto justify-content-end">
-              <Link to="skills_section" spy={true} smooth={true} id="nav-link"> My Skills </Link>
-              <Link to="contact_section" spy={true} smooth={true} id="nav-link"> Contact Me </Link>
-              <Link to="projects_section" spy={true} smooth={true} id="nav-link"> My Projects </Link>
+              <Link to="projects_section" spy={true} smooth={true} id="nav-link"> Projects </Link>
+              <Link to="skills_section" spy={true} smooth={true} id="nav-link"> Skills </Link>
+              <Link to="contact_section" spy={true} smooth={true} id="nav-link"> Contact </Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

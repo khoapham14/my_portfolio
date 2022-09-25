@@ -1,22 +1,19 @@
 #projects_section {
   background-color: #add0ec;
-  min-height: 1600px;
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding-top: 10vh;
+  padding-left: 20%;
+  padding-right: 20%;
  }
  
- #projects_header {
-  color: #0e3147;
-  text-align: center;
-  font-size: 3em;
-  font-weight: 700;
-  padding-top: 3%;
-  padding-bottom: 3%;
- }
  
+ #project_button{
+  font-size: 1em;
+ }
+
  .card {
   display: block;
   margin-left: auto;
@@ -26,13 +23,16 @@
  
  .card-title {
   color: #0e3147;
+  font-size: 1em;
  }
  
  .card-subtitle {
   color: #3d6387;
+  font-size: 1em;
  }
  
  .card-text {
   color: #6c90c0;
+  font-size: 1em;
  }
  

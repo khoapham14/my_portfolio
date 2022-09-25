@@ -8,7 +8,7 @@ import Footer from './Footer/Footer';
 
 const DesktopPage = (props) => {
   return (
-    <>  
+    <>
       <HeroSection />
       <ProjectSection />
       <SkillSection />

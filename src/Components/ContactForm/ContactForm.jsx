@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './ContactForm.css';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Row, Col } from 'react-bootstrap';
 import { init } from "emailjs-com";
 import emailjs from "emailjs-com";
 import swal from 'sweetalert2';
@@ -70,7 +70,14 @@ const ContactForm = (props) => {
         <Form.Label> Message: </Form.Label>
         <Form.Control as="textarea" type="message" rows={3} onChange={onMessageChange} />
       </Form.Group>
-        <button className="button" type="submit">Submit</button>
+        <Row>
+          <Col md={4} sm={12}>
+            <button className="button" type="submit">Submit</button>
+          </Col>
+          <Col md={8} sm={12}>
+            <p> or email to cody.pham14@gmail.com</p>
+          </Col>
+        </Row>
       </Form>
     </div>
   );

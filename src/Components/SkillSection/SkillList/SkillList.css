@@ -1,0 +1,5 @@
+.skillList{
+  display: inline;
+  grid-template-columns: auto;
+  line-height: 2rem;
+}

@@ -18,25 +18,17 @@ const HeroSection = (props) => {
       {/* Hero Section */}
       <Container>
         <Row>
-          <Col md={2}></Col>
-          <Col md={8}>
+
             <div id="welcome">
-              <p id="header"> Hi, I'm Khoa. </p>
-              <hr id="divider" />
-              <p id="description"> I grew up
-                in Vietnam and moved to Auckland in 2014.
-                I have recently finished my Bachelor's Degree &
-                now I'm looking for internship opportunities. </p>
+              <div id="header"> Hi, I'm Khoa </div>
+              <div id="description"> I’m a software developer in Auckland, specializing in Front End / Web Development using ReactJS. </div>
               <Button variant="outline-light" id="cta_button">  <Link to="contact_section" spy={true} smooth={true}> Let's Talk! </Link> </Button>
             </div>
-          </Col>
-          <Col md={2}></Col>
+
         </Row>
       </Container>
       <img
         src={White_Arrow}
-        height="5%"
-        width="auto"
         alt="white arrow"
         id="arrow"
       />

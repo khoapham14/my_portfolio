@@ -1,29 +1,30 @@
  /* Footer Section */
  #footer {
   background-color: #0e3147;
-  height: 30vh;
+  height: auto;
   line-height: 1em;
-  min-height: 350px;
+  padding: 1.5rem;
  }
  
  #footer_header {
-  padding-top: 15%;
+  padding-top: 1rem;
   color: #add0ec;
-  font-size: 1.3em;
+  font-size: 1.5rem;
   font-weight: 700;
   padding-bottom: 3%;
  }
  
  #footer_desc {
   color: #add0ec;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 300;
+  cursor: pointer;
  }
  
  #footer_disclaimer {
   margin-top: 5%;
   color: #add0ec;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 300;
   display: block;
   margin-left: auto;
