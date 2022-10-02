@@ -11,10 +11,8 @@ const NavigationBar = (props) => {
           <Navbar.Brand>
             <img
               src={Logo}
-              height="50px"
-              width="auto"
               alt="Khoa's Logo"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top logo"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" className="justify-content-end" />

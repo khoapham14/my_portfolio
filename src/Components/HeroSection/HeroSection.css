@@ -34,7 +34,7 @@
 }
 
 #welcome {
-  margin-top: 10%;
+  margin-top: 15%;
   text-align: center;
   display: block;
   margin-left: auto;
@@ -45,7 +45,7 @@
 
 #header {
   color: #0e3147;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
@@ -53,18 +53,18 @@
 
 #description {
   color: #0e3147;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   text-align: justify;
-  width: 60%;
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 #cta_button {
-  font-size: 1.5em;
-  font-weight: 300;
-  margin-top: 1em;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
 }
 
 #arrow {

@@ -14,8 +14,7 @@ const ContactSection = (props) => {
     <div id="contact_section">
       <SectionHeader sectionTitle="Contact" sectionDescription="All the ways you can reach me." />
       <Container>
-        <Row>
-            <Row>
+      <Row>
             <Col md={4} style={{paddingRight:0, paddingLeft:0}}>
             <div id="contact_form_box"> 
               <p id="contact_form_header">Send me a message</p>
@@ -31,8 +30,6 @@ const ContactSection = (props) => {
               <ContactForm />
             </Col>
             </Row>
-
-        </Row>
       </Container>
     </div>
   );

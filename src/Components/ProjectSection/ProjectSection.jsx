@@ -8,44 +8,17 @@ import Cab_Card from '../../Assets/Projects/Cab_Booking.png';
 import SEER_Card from '../../Assets/Projects/SEER.png';
 import Nothing_Card from '../../Assets/Projects/Nothing_Project.png';
 import SectionHeader from '../SectionHeader/SectionHeader';
+// import { motion } from "framer-motion";
 
 
 const ProjectSection = (props) => {
   return (
     <div id="projects_section">
-      <SectionHeader sectionTitle="Projects" sectionDescription="Projects I have done in my spare time" />
+      <SectionHeader sectionTitle="Projects" sectionDescription="Things I've made outside of work and school." />
       <Container>
         <Row>
-          <Col md={6}>
-            <Card style={{ width: '85%', }}>
-              <Card.Img variant="top" src={WAU_Card} width="100%" height="auto" />
-              <Card.Body>
-                <Card.Title> We Are Us Website </Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">  ReactJS, Bootstrap, NodeJS, AWS, Strapi CMS, Google Maps </Card.Subtitle>
-                <Card.Text> A startup similar to Airbnb dedicated to health & wellness businesses.
-                </Card.Text>
-                <Button variant="primary" id="project_button" href="http://54.66.121.53/home"> See Project </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6}>
-            <Card style={{ width: '85%', }}>
-              <Card.Img variant="top" src={Simp_Card} width="100%" height="auto" />
-              <Card.Body>
-                <Card.Title> CubeTimer </Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">  ReactJS, Bootstrap, Graph.js, Github Pages. </Card.Subtitle>
-                <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
-                </Card.Text>
-                <Button variant="primary" id="project_button" href="https://asianlanlord.github.io/simplict/"> See Project </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-
-        </Row>
-
-        <Row>
-          <Col md={6}>
-            <Card style={{ width: '85%', }}>
+          <Col md={12} lg={6}>
+          <Card style={{ width: '85%', }}>
               <Card.Img variant="top" src={Nothing_Card} width="100%" height="auto" />
               <Card.Body>
                 <Card.Title> Nothing </Card.Title>
@@ -57,8 +30,24 @@ const ProjectSection = (props) => {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={6}>
+          <Col md={12} lg={6}>
             <Card style={{ width: '85%', }}>
+              <Card.Img variant="top" src={Simp_Card} width="100%" height="auto" />
+              <Card.Body>
+                <Card.Title> CubeTimer </Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">  ReactJS, Bootstrap, Graph.js, Github Pages. </Card.Subtitle>
+                <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
+                </Card.Text>
+                <Button variant="primary" id="project_button" href="https:/khoapham14.github.io/simplict/"> See Project </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+        </Row>
+
+        <Row>
+          <Col md={12} lg={6}>
+          <Card style={{ width: '85%', }}>
               <Card.Img variant="top" src={SEER_Card} width="100%" height="auto" />
               <Card.Body>
                 <Card.Title> This website </Card.Title>
@@ -68,6 +57,20 @@ const ProjectSection = (props) => {
                 <Button variant="primary" id="project_button" href="https://se-evidence-repo.herokuapp.com/"> See Project </Button>
               </Card.Body>
             </Card>
+          </Col>
+          <Col md={12} lg={6}>
+          <Card style={{ width: '85%', }}>
+              <Card.Img variant="top" src={WAU_Card} width="100%" height="auto" />
+              <Card.Body>
+                <Card.Title> We Are Us Website </Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">  ReactJS, Bootstrap, NodeJS, AWS, Strapi CMS, Google Maps </Card.Subtitle>
+                <Card.Text> A startup similar to Airbnb dedicated to health & wellness businesses.
+                </Card.Text>
+                {/* <Button variant="primary" id="project_button" disabled> See Project </Button> */}
+                <p>*Site has gone live, this MVP is no longer viewable</p>
+              </Card.Body>
+            </Card>
+
           </Col>
         </Row>
       </Container>

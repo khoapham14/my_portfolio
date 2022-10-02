@@ -70,14 +70,7 @@ const ContactForm = (props) => {
         <Form.Label> Message: </Form.Label>
         <Form.Control as="textarea" type="message" rows={3} onChange={onMessageChange} />
       </Form.Group>
-        <Row>
-          <Col md={4} sm={12}>
-            <button className="button" type="submit">Submit</button>
-          </Col>
-          <Col md={8} sm={12}>
-            <p> or email to cody.pham14@gmail.com</p>
-          </Col>
-        </Row>
+      <button className="button" type="submit">Submit</button>
       </Form>
     </div>
   );

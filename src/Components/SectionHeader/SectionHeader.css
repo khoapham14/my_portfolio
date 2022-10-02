@@ -16,13 +16,13 @@
 .sectionDescription{
   color: #246C99;
   text-align: left;
+  font-size: 1.2rem;
 }
 
 .sectionContainer{
   display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 100%;
-  /* justify-content: space-between; */
-  align-items: baseline;
-  margin-bottom: 2rem;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  align-items: center;
+  /* justify-content: center; */
 }

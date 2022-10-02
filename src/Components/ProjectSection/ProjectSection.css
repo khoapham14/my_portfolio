@@ -11,7 +11,7 @@
  
  
  #project_button{
-  font-size: 1em;
+  font-size: 1rem;
  }
 
  .card {
@@ -23,16 +23,16 @@
  
  .card-title {
   color: #0e3147;
-  font-size: 1em;
+  font-size: 1rem;
  }
  
  .card-subtitle {
   color: #3d6387;
-  font-size: 1em;
+  font-size: 1rem;
  }
  
  .card-text {
   color: #6c90c0;
-  font-size: 1em;
+  font-size: 1rem;
  }
  
