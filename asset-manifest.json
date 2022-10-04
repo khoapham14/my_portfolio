@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.66825a99.chunk.css",
-    "main.js": "/portfolio/static/js/main.287ce949.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.287ce949.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.1ea77518.chunk.css",
+    "main.js": "/portfolio/static/js/main.89bcf5df.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.89bcf5df.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.b2bd5a7b.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.b2bd5a7b.js.map",
-    "static/js/2.5040a828.chunk.js": "/portfolio/static/js/2.5040a828.chunk.js",
-    "static/js/2.5040a828.chunk.js.map": "/portfolio/static/js/2.5040a828.chunk.js.map",
+    "static/js/2.40752468.chunk.js": "/portfolio/static/js/2.40752468.chunk.js",
+    "static/js/2.40752468.chunk.js.map": "/portfolio/static/js/2.40752468.chunk.js.map",
     "static/js/3.4e4df0ca.chunk.js": "/portfolio/static/js/3.4e4df0ca.chunk.js",
     "static/js/3.4e4df0ca.chunk.js.map": "/portfolio/static/js/3.4e4df0ca.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.66825a99.chunk.css.map": "/portfolio/static/css/main.66825a99.chunk.css.map",
-    "static/js/2.5040a828.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5040a828.chunk.js.LICENSE.txt",
+    "static/css/main.1ea77518.chunk.css.map": "/portfolio/static/css/main.1ea77518.chunk.css.map",
+    "static/js/2.40752468.chunk.js.LICENSE.txt": "/portfolio/static/js/2.40752468.chunk.js.LICENSE.txt",
     "static/media/Cab_Booking.cb2ea30d.png": "/portfolio/static/media/Cab_Booking.cb2ea30d.png",
     "static/media/Khoa_CV.6adae027.pdf": "/portfolio/static/media/Khoa_CV.6adae027.pdf",
     "static/media/Khoa_Visa.899f862a.pdf": "/portfolio/static/media/Khoa_Visa.899f862a.pdf",
@@ -20,21 +20,16 @@
     "static/media/SEER.74d3da10.png": "/portfolio/static/media/SEER.74d3da10.png",
     "static/media/School_Icon.6f5f97ab.svg": "/portfolio/static/media/School_Icon.6f5f97ab.svg",
     "static/media/SimpliCT.d4ef0657.png": "/portfolio/static/media/SimpliCT.d4ef0657.png",
-    "static/media/Skill_BackEnd.bdefbfd4.svg": "/portfolio/static/media/Skill_BackEnd.bdefbfd4.svg",
-    "static/media/Skill_C.c5347c74.svg": "/portfolio/static/media/Skill_C.c5347c74.svg",
-    "static/media/Skill_Comms.c02947fb.svg": "/portfolio/static/media/Skill_Comms.c02947fb.svg",
-    "static/media/Skill_FrontEnd.8b7626ff.svg": "/portfolio/static/media/Skill_FrontEnd.8b7626ff.svg",
-    "static/media/Skill_Java.f672268d.svg": "/portfolio/static/media/Skill_Java.f672268d.svg",
-    "static/media/Skill_PC.d5260e91.svg": "/portfolio/static/media/Skill_PC.d5260e91.svg",
     "static/media/We_Are_Us_Card.8fbbe3ce.png": "/portfolio/static/media/We_Are_Us_Card.8fbbe3ce.png",
     "static/media/Work_Icon.2c6c01ca.svg": "/portfolio/static/media/Work_Icon.2c6c01ca.svg",
     "static/media/HeroSection.css": "/portfolio/static/media/main-background.4ebadb41.svg",
+    "static/media/scroll_down.b3262cdc.svg": "/portfolio/static/media/scroll_down.b3262cdc.svg",
     "static/media/ContactSection.css": "/portfolio/static/media/underwater-background.036153b2.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b2bd5a7b.js",
-    "static/js/2.5040a828.chunk.js",
-    "static/css/main.66825a99.chunk.css",
-    "static/js/main.287ce949.chunk.js"
+    "static/js/2.40752468.chunk.js",
+    "static/css/main.1ea77518.chunk.css",
+    "static/js/main.89bcf5df.chunk.js"
   ]
 }
