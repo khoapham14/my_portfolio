@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: 0;
+  padding-top: 4rem;
   padding-left: 20%;
   padding-right: 20%;
   margin-left: auto;
@@ -15,10 +15,10 @@
   margin-right: auto;
 }
 
-.btn-primary:hover {
-  background-color: lightskyblue;
-  color: #0e3147;
-  border-color: lightskyblue;
+.btn-outline-light:hover {
+  background-color: #16425e;
+  color: white;
+  border-color: #16425e;
 }
 
 .btn-primary {
@@ -28,20 +28,19 @@
 }
 
 .btn-outline-light {
+  margin: 0.5rem;
   background-color: #0e3147;
   color: white;
   border-color: #0e3147;
 }
 
 #welcome {
-  margin-top: 15%;
+  margin-top: 12%;
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 #header {
   color: #0e3147;
@@ -54,7 +53,7 @@
 #description {
   color: #0e3147;
   font-size: 1.2rem;
-  text-align: justify;
+  /* text-align: justify; */
   width: 50%;
   display: block;
   margin-left: auto;
@@ -69,9 +68,12 @@
 
 #arrow {
   display: block;
-  height: 5rem;
+  height: 3.5rem;
   width: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  right: 0;
 }

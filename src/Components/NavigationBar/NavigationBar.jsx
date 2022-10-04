@@ -8,13 +8,13 @@ const NavigationBar = (props) => {
     <div>
       <Container className="navBar">
         <Navbar expand="lg">
-          <Navbar.Brand>
+          {/* <Navbar.Brand>
             <img
               src={Logo}
               alt="Khoa's Logo"
               className="d-inline-block align-top logo"
             />
-          </Navbar.Brand>
+          </Navbar.Brand> */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" id="custom-toggler" className="justify-content-end" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav className="ml-auto justify-content-end">

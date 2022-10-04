@@ -21,7 +21,7 @@ const SkillSection = (props) => {
           <Col sm={12} md={12} lg={4}>
             <Card style={{  backgroundColor: 'white' }}>
               <Card.Body>
-                <img src={WorkIcon} className="skills_icon" />
+                <img src={WorkIcon} alt="Work" className="skills_icon" />
                 <Card.Title className="card-title"> Used at work </Card.Title>
 
                 <Card.Text> 
@@ -36,7 +36,7 @@ const SkillSection = (props) => {
           <Col sm={12} md={12} lg={4}>
             <Card style={{  backgroundColor: 'white'}}>
               <Card.Body>
-                <img src={SchoolIcon} className="skills_icon" />
+                <img src={SchoolIcon} alt="School" className="skills_icon" />
                 <Card.Title className="card-title"> Used at school </Card.Title>
 
                 <Card.Text> 
@@ -51,7 +51,7 @@ const SkillSection = (props) => {
           <Col sm={12} md={12} lg={4}>
             <Card style={{  backgroundColor: 'white'}}>
               <Card.Body>
-                <img src={SkillIcon} className="skills_icon" />
+                <img src={SkillIcon} alt="Soft skills" className="skills_icon" />
                 <Card.Title className="card-title"> Personal skills </Card.Title>
 
                 <Card.Text> 

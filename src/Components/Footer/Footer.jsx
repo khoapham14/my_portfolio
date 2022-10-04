@@ -2,6 +2,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import './Footer.css';
 
+import Khoa_CV from '../../Assets/Khoa_CV.pdf';
+import Khoa_Visa from '../../Assets/Khoa_Visa.pdf';
+
 const Footer = () => {
   return (
     <div id="footer">
@@ -16,8 +19,8 @@ const Footer = () => {
 
           <Col md={4} sm={6} xs={6}>
             <p id="footer_header"> Documents </p>
-            <p><a id="footer_desc" href="https://docs.google.com/document/d/15-zNXyYNb5HW8aOzQFOw4jzlYUGow4FcUdzRTf-JeGg/edit?usp=sharing">  My CV/Resume</a></p>
-            <p><a id="footer_desc" href="https://drive.google.com/file/d/1BpyqqHGwUSH_ypx118FIFU0EcnleIEMu/view?usp=sharing" > My Working Visa</a></p>
+            <p><a id="footer_desc" href={Khoa_CV} target="_blank">My CV/Resume</a></p>
+            <p><a id="footer_desc" href={Khoa_Visa} target="_blank"> My Visa</a></p>
           </Col>
 
           <Col md={4} sm={12}>

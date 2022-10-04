@@ -14,7 +14,7 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 const ProjectSection = (props) => {
   return (
     <div id="projects_section">
-      <SectionHeader sectionTitle="Projects" sectionDescription="Things I've made outside of work and school." />
+      <SectionHeader sectionTitle="Projects" sectionDescription="." />
       <Container>
         <Row>
           <Col md={12} lg={6}>
@@ -51,10 +51,10 @@ const ProjectSection = (props) => {
               <Card.Img variant="top" src={SEER_Card} width="100%" height="auto" />
               <Card.Body>
                 <Card.Title> This website </Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">  ReactJS, React Bootstrap, Heroku. </Card.Subtitle>
-                <Card.Text> My personal porfolio where I designed and built everything. 
+                <Card.Subtitle className="mb-2 text-muted">  HTML, CSS, ReactJS, Bootstrap, Figma, Github Pages. </Card.Subtitle>
+                <Card.Text> My personal porfolio where I show case my projects and skills. I designed the page layout, created the vector graphics in Figma, and hosted the site on Github Pages.
                 </Card.Text>
-                <Button variant="primary" id="project_button" href="https://se-evidence-repo.herokuapp.com/"> See Project </Button>
+                {/* <Button variant="primary" id="project_button" href="https://se-evidence-repo.herokuapp.com/"> See Project </Button> */}
               </Card.Body>
             </Card>
           </Col>
@@ -62,12 +62,12 @@ const ProjectSection = (props) => {
           <Card style={{ width: '85%', }}>
               <Card.Img variant="top" src={WAU_Card} width="100%" height="auto" />
               <Card.Body>
-                <Card.Title> We Are Us Website </Card.Title>
+                <Card.Title> We Are Us MVP Website </Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">  ReactJS, Bootstrap, NodeJS, AWS, Strapi CMS, Google Maps </Card.Subtitle>
-                <Card.Text> A startup similar to Airbnb dedicated to health & wellness businesses.
+                <Card.Text> A startup similar to Airbnb dedicated to health & wellness businesses. The company went live with a new website 
+                  and this MVP version is no longer available.
                 </Card.Text>
                 {/* <Button variant="primary" id="project_button" disabled> See Project </Button> */}
-                <p>*Site has gone live, this MVP is no longer viewable</p>
               </Card.Body>
             </Card>
 
