@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1ea77518.chunk.css",
-    "main.js": "/portfolio/static/js/main.2afff3a2.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.2afff3a2.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.b2bd5a7b.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.b2bd5a7b.js.map",
-    "static/js/2.40752468.chunk.js": "/portfolio/static/js/2.40752468.chunk.js",
-    "static/js/2.40752468.chunk.js.map": "/portfolio/static/js/2.40752468.chunk.js.map",
-    "static/js/3.4e4df0ca.chunk.js": "/portfolio/static/js/3.4e4df0ca.chunk.js",
-    "static/js/3.4e4df0ca.chunk.js.map": "/portfolio/static/js/3.4e4df0ca.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.86a1ac38.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.86a1ac38.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.f4231277.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.f4231277.js.map",
+    "static/js/2.2e25b846.chunk.js": "/portfolio/static/js/2.2e25b846.chunk.js",
+    "static/js/2.2e25b846.chunk.js.map": "/portfolio/static/js/2.2e25b846.chunk.js.map",
+    "static/js/3.d3fa7466.chunk.js": "/portfolio/static/js/3.d3fa7466.chunk.js",
+    "static/js/3.d3fa7466.chunk.js.map": "/portfolio/static/js/3.d3fa7466.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.1ea77518.chunk.css.map": "/portfolio/static/css/main.1ea77518.chunk.css.map",
-    "static/js/2.40752468.chunk.js.LICENSE.txt": "/portfolio/static/js/2.40752468.chunk.js.LICENSE.txt",
+    "static/js/2.2e25b846.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2e25b846.chunk.js.LICENSE.txt",
     "static/media/Cab_Booking.cb2ea30d.png": "/portfolio/static/media/Cab_Booking.cb2ea30d.png",
     "static/media/Khoa_CV.6adae027.pdf": "/portfolio/static/media/Khoa_CV.6adae027.pdf",
     "static/media/Khoa_Visa.899f862a.pdf": "/portfolio/static/media/Khoa_Visa.899f862a.pdf",
@@ -27,9 +27,9 @@
     "static/media/ContactSection.css": "/portfolio/static/media/underwater-background.036153b2.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b2bd5a7b.js",
-    "static/js/2.40752468.chunk.js",
+    "static/js/runtime-main.f4231277.js",
+    "static/js/2.2e25b846.chunk.js",
     "static/css/main.1ea77518.chunk.css",
-    "static/js/main.2afff3a2.chunk.js"
+    "static/js/main.86a1ac38.chunk.js"
   ]
 }
