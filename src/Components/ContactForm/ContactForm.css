@@ -2,6 +2,7 @@
   background-color: #0E3147;
   color: white;
   font-weight:bold;
+  width: fit-content;
   margin-top: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -26,8 +27,18 @@
   font-size: 1rem;
 }
 
+.form_actions{
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 100%;
+  color:#0E3147;
+  font-weight: 300;
+  align-items: center;
+}
+
 @media only screen and (max-width: 767px) {
   .contact_form{
     border-radius: 0px 0px 15px 15px;
+    padding: 2rem;
   }
 }

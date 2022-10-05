@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "axios": "^1.0.0",
     "bootstrap": "^5.2.0",
     "framer-motion": "^7.3.6",
     "gh-pages": "^4.0.0",

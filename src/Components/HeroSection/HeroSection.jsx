@@ -18,12 +18,11 @@ const HeroSection = (props) => {
       {/* Hero Section */}
       <Container>
         <Row>
-
           <div id="welcome">
             <div id="header"> Hi, I'm Khoa </div>
             <div id="description"> Originally from Vietnam, I am currently working in New Zealand as a software developer. Specializing in Front End Development using ReactJS. </div>
-            <Button variant="outline-light" id="cta_button">  <Link to="projects_section" spy={true} smooth={true}> View Projects </Link> </Button>
-            <Button variant="outline-light" id="cta_button">  <Link to="contact_section" spy={true} smooth={true}> Let's Talk! </Link> </Button>
+             <Link to="projects_section" spy={true} smooth={true}> <Button variant="outline-light" id="cta_button"> View Projects </Button></Link> 
+             <Link to="contact_section" spy={true} smooth={true}> <Button variant="outline-light" id="cta_button"> Let's Talk! </Button>  </Link>
           </div>
         </Row>
       </Container>

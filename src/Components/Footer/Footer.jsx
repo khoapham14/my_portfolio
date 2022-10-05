@@ -12,9 +12,9 @@ const Footer = () => {
         <Row>
           <Col md={4} sm={6} xs={6}>
             <p id="footer_header">Navigation</p>
-            <p><Link to="projects_section" spy={true} smooth={true} id="footer_desc"> My Projects </Link> </p>
+            <p><Link to="projects_section" spy={true} smooth={true} id="footer_desc">Projects </Link> </p>
             <p><Link to="skills_section" spy={true} smooth={true} id="footer_desc"> Skills </Link> </p>
-            <p><Link to="contact_section" spy={true} smooth={true} id="footer_desc"> Contact Me </Link> </p>
+            <p><Link to="contact_section" spy={true} smooth={true} id="footer_desc"> Contact </Link> </p>
           </Col>
 
           <Col md={4} sm={6} xs={6}>
