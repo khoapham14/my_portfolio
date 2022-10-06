@@ -14,7 +14,7 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 const ProjectSection = (props) => {
   return (
     <div id="projects_section">
-      <SectionHeader sectionTitle="Projects" sectionDescription="." />
+      <SectionHeader sectionTitle="Projects" sectionDescription="Projects I've done outside of work." />
       <Container>
         <Row>
           <Col md={12} lg={6}>
@@ -26,7 +26,7 @@ const ProjectSection = (props) => {
                   Stripe, Heroku, Firebase Authentication </Card.Subtitle>
                 <Card.Text> An online store that sells nothing.
                 </Card.Text>
-                <Button variant="primary" id="project_button" href="https://shielded-inlet-26000.herokuapp.com/"> See Project </Button>
+                <Button variant="primary" id="project_button" href="https://shielded-inlet-26000.herokuapp.com/" target="_blank"> See Project </Button>
               </Card.Body>
             </Card>
           </Col>
@@ -38,7 +38,7 @@ const ProjectSection = (props) => {
                 <Card.Subtitle className="mb-2 text-muted">  ReactJS, Bootstrap, Graph.js, Github Pages. </Card.Subtitle>
                 <Card.Text> A Rubik's cube timer with a standard scrambler and basic stats tracking.
                 </Card.Text>
-                <Button variant="primary" id="project_button" href="https:/khoapham14.github.io/simplict/"> See Project </Button>
+                <Button variant="primary" id="project_button" href="https://khoapham14.github.io/simplict/" target="_blank"> See Project </Button>
               </Card.Body>
             </Card>
           </Col>
