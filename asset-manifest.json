@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.14f37a2c.chunk.css",
-    "main.js": "/portfolio/static/js/main.82d8fd83.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.82d8fd83.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.14427d70.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.14427d70.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.f4231277.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.f4231277.js.map",
     "static/js/2.2e25b846.chunk.js": "/portfolio/static/js/2.2e25b846.chunk.js",
@@ -13,7 +13,7 @@
     "static/css/main.14f37a2c.chunk.css.map": "/portfolio/static/css/main.14f37a2c.chunk.css.map",
     "static/js/2.2e25b846.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2e25b846.chunk.js.LICENSE.txt",
     "static/media/Cab_Booking.cb2ea30d.png": "/portfolio/static/media/Cab_Booking.cb2ea30d.png",
-    "static/media/Khoa_CV.6adae027.pdf": "/portfolio/static/media/Khoa_CV.6adae027.pdf",
+    "static/media/Khoa_CV.4a8b8124.pdf": "/portfolio/static/media/Khoa_CV.4a8b8124.pdf",
     "static/media/Khoa_Visa.899f862a.pdf": "/portfolio/static/media/Khoa_Visa.899f862a.pdf",
     "static/media/Logo_Blue.bfb01d14.svg": "/portfolio/static/media/Logo_Blue.bfb01d14.svg",
     "static/media/Person_Icon.506f52c2.svg": "/portfolio/static/media/Person_Icon.506f52c2.svg",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.f4231277.js",
     "static/js/2.2e25b846.chunk.js",
     "static/css/main.14f37a2c.chunk.css",
-    "static/js/main.82d8fd83.chunk.js"
+    "static/js/main.14427d70.chunk.js"
   ]
 }
